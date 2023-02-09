@@ -2,14 +2,85 @@
   font-family: "Noah";
   src: url(../fonts/Noah-Regular.ttf);
 }
+
 /* img {
   width: 100%;
   height: 100%;
 } */
+
+/* Яна хедер старт */
+.header__img {
+  max-width: 100%;
+
+}
+
+.projects__title {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.projects__container {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "one two"
+    "three four";
+  gap: 1em;
+  justify-content: center;
+  justify-items: stretch;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.projects__button {
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 300px;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #1A1A18;
+}
+
+/* Яна хедер финиш */
+
+/* <!--  Проекты - Яна start--> */
+.projects__title {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 72px;
+  text-align: center;
+  color: #1A1A18;
+}
+
+/* <!--  Проекты - Яна FİNİSH--> */
 /* Почему нас выбирают - Динара start */
 .values {
   background-color: #dde3e1;
 }
+
 .values__heading {
   font-family: "Noah";
   font-style: normal;
@@ -19,6 +90,7 @@
   text-align: center;
   color: #1a1a18;
 }
+
 .values__wrap-top,
 .values__wrap-bootom {
   max-width: 69%;
@@ -27,19 +99,23 @@
   grid-template-rows: 1fr;
   justify-items: center;
 }
+
 .values__wrap-top {
   grid-template-columns: repeat(3, 1fr);
 }
+
 .values__wrap-bootom {
   grid-template-columns: repeat(2, 1fr);
   padding: 0 10% 0 10%;
 }
+
 .values__inner {
   margin: 3%;
   padding: 12%;
 }
-.values__icon {
-}
+
+.values__icon {}
+
 .values__text {
   font-family: "Noah";
   font-style: normal;
@@ -49,7 +125,9 @@
   margin-top: 2%;
   color: #1a1a18;
 }
+
 @media screen and (max-width: 320px) {
+
   .values__wrap-top,
   .values__wrap-bootom {
     max-width: 75%;
@@ -58,6 +136,7 @@
     grid-template-columns: 1fr;
     padding: 0;
   }
+
   .values__heading {
     font-family: "Noah";
     font-style: normal;
@@ -67,6 +146,7 @@
     text-align: center;
     color: #1a1a18;
   }
+
   .values__text {
     font-family: "Noah";
     font-style: normal;
@@ -75,11 +155,13 @@
     line-height: 20px;
     color: #1a1a18;
   }
+
   .values__inner {
     display: flex;
     padding: 0;
   }
 }
+
 /* Почему нас выбирают - Динара end */
 
 /* Отзывы - Динара start */

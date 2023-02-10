@@ -11,7 +11,6 @@
 /* Яна хедер старт */
 .header__img {
   max-width: 100%;
-
 }
 
 .projects__title {
@@ -26,7 +25,8 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "one two"
+  grid-template-areas:
+    "one two"
     "three four";
   gap: 1em;
   justify-content: center;
@@ -51,28 +51,28 @@
 
 .projects__button {
   position: absolute;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 300px;
-  font-family: 'Noah';
+  font-family: "Noah";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  color: #1A1A18;
+  color: #1a1a18;
 }
 
 /* Яна хедер финиш */
 
 /* <!--  Проекты - Яна start--> */
 .projects__title {
-  font-family: 'Noah';
+  font-family: "Noah";
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
   line-height: 72px;
   text-align: center;
-  color: #1A1A18;
+  color: #1a1a18;
 }
 
 /* <!--  Проекты - Яна FİNİSH--> */
@@ -114,7 +114,8 @@
   padding: 12%;
 }
 
-.values__icon {}
+.values__icon {
+}
 
 .values__text {
   font-family: "Noah";
@@ -127,7 +128,6 @@
 }
 
 @media screen and (max-width: 320px) {
-
   .values__wrap-top,
   .values__wrap-bootom {
     max-width: 75%;
@@ -165,6 +165,38 @@
 /* Почему нас выбирают - Динара end */
 
 /* Отзывы - Динара start */
+.reviews {
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews____heading-text {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 72px;
+  text-align: right;
+  color: #000000;
+}
+.reviews____wrap {
+  display: grid;
+  grid-template-areas: "reviews____photo reviews____inner";
+}
+.reviews____photo {
+  grid-area: reviews____photo;
+}
+.reviews____inner {
+  grid-area: reviews____inner;
+  padding-left: 5%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+}
+.reviews____page {
+}
+
 /* Отзывы - Динара end */
 
 /* Часто зад. вопросы - Динара start */

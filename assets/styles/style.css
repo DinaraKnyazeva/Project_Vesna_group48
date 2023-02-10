@@ -3,22 +3,97 @@
   src: url(../fonts/Noah-Regular.ttf);
 }
 
-/* img {
-  width: 100%;
-  height: 100%;
-} */
-
 /* Яна хедер старт */
-header {
-  background-image: url(../images/main/header1.png);
+.header__content {
+  background-image: url(../images/main/header_background.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 1950px;
-  filter: brightness(40%);
 }
 
+.nav-link {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3em;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.header-text {
+}
+
+.header__company-name {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.header__title {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 87px;
+  color: #ffffff;
+}
+
+.header__moto {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+/* Яна хедер финиш */
+/* Основной текст - Асият start */
+HEAD .projects__link:active {
+  text-decoration: none;
+}
+
+.description_heading {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59.95px;
+  text-align: center;
+  color: #1a1a18;
+}
+
+.description_content {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  margin-left: 29%;
+  margin-right: 29%;
+  margin-top: 53px;
+}
+
+/* Основной текст - Асият finish */
+
+/* Что мы делаем? - Асият start */
+/* Что мы делаем? - Асият finish */
+
+/* <!--  Проекты - Яна start--> */
 .projects__title {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 72px;
+  text-align: center;
+  color: #1a1a18;
   margin-top: 3%;
   margin-bottom: 3%;
 }
@@ -64,6 +139,9 @@ header {
   border-radius: 50%;
   border: none;
   padding: 4% 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .projects__button:hover {
@@ -71,46 +149,20 @@ header {
   color: white;
 }
 
-.projects__textbutton {
+.projects__link {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
   font-size: 3em;
-
   text-align: center;
   color: #1a1a18;
+  text-decoration: none;
 }
 
-/* Яна хедер финиш */
-
-/* Основной текст - Асият start */
-.description_heading {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 59.95px;
-  text-align: center;
-  color: #1a1a18;
+.projects__link:hover {
+  color: white;
 }
-.description_content {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
-  text-align: center;
-  color: #000000;
-  margin-left: 29%;
-  margin-right: 29%;
-  margin-top: 53px;
-}
-/* Основной текст - Асият finish */
 
-/* Что мы делаем? - Асият start */
-/* Что мы делаем? - Асият finish */
-
-/* <!--  Проекты - Яна start--> */
 .projects__title {
   font-family: "Noah";
   font-style: normal;
@@ -122,25 +174,30 @@ header {
 }
 
 /* <!--  Проекты - Яна FİNİSH--> */
+
 /* Почему нас выбирают - Динара start */
 .values {
   background-color: #dde3e1;
 }
-.values__container {
+.values__container,
+.reviews {
   display: flex;
   flex-direction: column;
-  max-width: 69%;
+  max-width: 75%;
   margin: 0 auto;
+  align-items: center;
 }
-.values__heading-wrapper {
-  margin: 2% 0 2% 0;
+.values__heading-wrapper,
+.reviews____heading-wrapper {
+  margin: 3% 0 3% 0;
 }
 
-.values__heading-text {
+.values__heading-text,
+.reviews____heading-text {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
-  font-size: 58px;
+  font-size: calc(40px + 18 * (100vw / 1920));
   line-height: 72px;
   text-align: center;
   color: #1a1a18;
@@ -155,11 +212,12 @@ header {
 
 .values__wrap-top {
   grid-template-columns: repeat(3, 1fr);
+  padding: 0 5% 0 5%;
 }
 
 .values__wrap-bootom {
   grid-template-columns: repeat(2, 1fr);
-  padding: 0 10% 0 10%;
+  padding: 0 15% 0 15%;
 }
 
 .values__inner {
@@ -168,75 +226,31 @@ header {
 }
 
 .values__icon {
+  width: 40%;
 }
 
 .values__text,
-.reviews____text {
+.reviews____text,
+.reviews____topic {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: calc(16px + 8 * (100vw / 1920));
   line-height: 30px;
   margin-top: 2%;
   color: #1a1a18;
 }
 
-@media screen and (max-width: 320px) {
-  .values__wrap-top,
-  .values__wrap-bootom {
-    max-width: 75%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0;
-  }
-
-  .values__heading {
-    font-family: "Noah";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    color: #1a1a18;
-  }
-
-  .values__text {
-    font-family: "Noah";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
-    color: #1a1a18;
-  }
-
-  .values__inner {
-    display: flex;
-    padding: 0;
-  }
-}
-
 /* Почему нас выбирают - Динара end */
 
 /* Отзывы - Динара start */
-.reviews {
-  max-width: 75%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.reviews____heading-wrapper {
-  margin: 5% 0 5% 0;
-}
-.reviews____heading-text {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 58px;
-  line-height: 72px;
-  text-align: right;
+
+.reviews____heading-text_black {
   color: #000000;
+}
+.reviews____photo {
+  width: 100%;
+  height: 100%;
 }
 .reviews____wrap {
   display: grid;
@@ -246,26 +260,98 @@ header {
 }
 .reviews____photo {
   grid-area: reviews____photo;
+  width: 100%;
 }
 .reviews____inner {
   grid-area: reviews____inner;
-  padding-left: 5%;
+  padding-left: 12%;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+  grid-template-rows: 15% 10% 10% auto 5%;
 }
 .reviews____name {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
-  font-size: 38px;
+  font-size: calc(20px + 18 * (100vw / 1920));
   line-height: 47px;
   color: #545a2f;
 }
-.reviews____topic {
+.reviews____topic_green {
+  color: #545a2f;
 }
-.reviews____page {
+.reviews____arrow-icon {
+  margin-left: 70%;
 }
+.reviews____page-icon {
+  margin-top: 5%;
+}
+@media screen and (max-width: 320px) {
+  .reviews {
+    margin: 0;
+    max-width: 100%;
+  }
+  .values__wrap-top,
+  .values__wrap-bootom {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
 
+  .values__heading-text,
+  .reviews____heading-text {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 300;
+    font-size: calc(40px + (18 + 18 * 0.7) * ((100vw - 320px) / 1920));
+    line-height: 40px;
+    text-align: center;
+    color: #1a1a18;
+  }
+
+  .values__text,
+  .reviews____text,
+  .reviews____topic {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
+    line-height: 20px;
+    color: #1a1a18;
+  }
+  .values__text {
+    margin: 5% 0 0 10%;
+  }
+  .values__inner {
+    display: flex;
+    padding: 0;
+    align-items: center;
+  }
+  .values__icon {
+    width: 30%;
+    height: 35%;
+    margin-right: 10px;
+  }
+  .reviews____wrap {
+    display: grid;
+    grid-template-areas:
+      "reviews____inner"
+      "reviews____photo";
+  }
+  .reviews____inner {
+    padding-left: 0%;
+  }
+  .reviews____arrow-icon {
+    display: none;
+  }
+  .reviews____name {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(20px + (18 + 18 * 0.7) * ((100vw - 320px) / 1920));
+    line-height: 47px;
+    color: #545a2f;
+  }
+}
 /* Отзывы - Динара end */
 
 /* Часто зад. вопросы - Динара start */

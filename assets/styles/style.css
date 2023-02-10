@@ -13,23 +13,11 @@
 }
 
 .nav-link {
-  font-family: "Geometria";
+  font-family: 'Noah';
   font-style: normal;
   font-weight: 500;
   font-size: 3em;
   line-height: 24px;
-  color: #ffffff;
-}
-
-.header-text {
-}
-
-.header__company-name {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
   color: #ffffff;
 }
 
@@ -53,10 +41,6 @@
 
 /* Яна хедер финиш */
 /* Основной текст - Асият start */
-HEAD .projects__link:active {
-  text-decoration: none;
-}
-
 .description_heading {
   font-family: "Noah";
   font-style: normal;
@@ -87,21 +71,18 @@ HEAD .projects__link:active {
 
 /* <!--  Проекты - Яна start--> */
 .projects__title {
-  font-family: "Noah";
+  margin-top: 5%;
+  font-family: 'Noah';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 58px;
   line-height: 72px;
   text-align: center;
-  color: #1a1a18;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  color: #1A1A18;
 }
 
 .projects__container {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 10%;
+  margin: 2% 5% 5% 5%;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -130,18 +111,19 @@ HEAD .projects__link:active {
 }
 
 .projects__button {
-  width: 10%;
-  height: 22%;
-  margin-left: 40%;
-  margin-top: 15%;
+  width: 230px;
+  height: 230px;
   position: absolute;
   background: #ffffff;
   border-radius: 50%;
   border: none;
   padding: 4% 3%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  justify-self: center;
+  align-self: center;
 }
 
 .projects__button:hover {
@@ -153,9 +135,13 @@ HEAD .projects__link:active {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
-  font-size: 3em;
+  font-size: 24px;
   text-align: center;
   color: #1a1a18;
+  text-decoration: none;
+}
+
+.projects__link:active {
   text-decoration: none;
 }
 

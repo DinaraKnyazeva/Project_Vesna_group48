@@ -13,7 +13,7 @@
 }
 
 .nav-link {
-  font-family: 'Noah';
+  font-family: "Noah";
   font-style: normal;
   font-weight: 500;
   font-size: 3em;
@@ -72,13 +72,13 @@
 /* <!--  Проекты - Яна start--> */
 .projects__title {
   margin-top: 5%;
-  font-family: 'Noah';
+  font-family: "Noah";
   font-style: normal;
   font-weight: 500;
   font-size: 58px;
   line-height: 72px;
   text-align: center;
-  color: #1A1A18;
+  color: #1a1a18;
 }
 
 .projects__container {
@@ -299,7 +299,7 @@
   .reviews____topic {
     font-family: "Noah";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
     line-height: 20px;
     color: #1a1a18;
@@ -332,7 +332,7 @@
   .reviews____name {
     font-family: "Noah";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: calc(20px + (18 + 18 * 0.7) * ((100vw - 320px) / 1920));
     line-height: 47px;
     color: #545a2f;

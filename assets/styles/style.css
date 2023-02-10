@@ -56,7 +56,39 @@
 }
 
 /* Яна хедер финиш */
+/* Основной текст - Асият start */
+HEAD .projects__link:active {
+  text-decoration: none;
+}
 
+
+.description_heading {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59.95px;
+  text-align: center;
+  color: #1a1a18;
+}
+
+.description_content {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  margin-left: 29%;
+  margin-right: 29%;
+  margin-top: 53px;
+}
+
+/* Основной текст - Асият finish */
+
+/* Что мы делаем? - Асият start */
+/* Что мы делаем? - Асият finish */
 
 
 /* <!--  Проекты - Яна start--> */
@@ -136,38 +168,6 @@
   color: white;
 }
 
-<<<<<<< HEAD
-.projects__link:active {
-  text-decoration: none;
-=======
-/* Основной текст - Асият start */
-.description_heading {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 59.95px;
-  text-align: center;
-  color: #1a1a18;
-}
-.description_content {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
-  text-align: center;
-  color: #000000; 
-  margin-left: 29%;
-  margin-right: 29%;
-  margin-top: 53px;
-}
-/* Основной текст - Асият finish */
-
-/* Что мы делаем? - Асият start */
-/* Что мы делаем? - Асият finish */
-
-/* <!--  Проекты - Яна start--> */
 .projects__title {
   font-family: 'Noah';
   font-style: normal;
@@ -176,7 +176,6 @@
   line-height: 72px;
   text-align: center;
   color: #1A1A18;
->>>>>>> 91eec60c1bd48ee1d8c3fbf202a964b4ad1357fd
 }
 
 /* <!--  Проекты - Яна FİNİSH--> */

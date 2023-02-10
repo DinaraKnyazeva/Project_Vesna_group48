@@ -9,16 +9,65 @@
 } */
 
 /* Яна хедер старт */
-header {
-  background-image: url(../images/main/header1.png);
+.header__content {
+  background-image: url(../images/main/header_background.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 1950px;
-  filter: brightness(40%)
 }
 
+.nav-link {
+  font-family: 'Geometria';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3em;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.header-text {}
+
+.header__company-name {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.header__title {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 87px;
+  color: #FFFFFF;
+}
+
+.header__moto {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+/* Яна хедер финиш */
+
+
+
+/* <!--  Проекты - Яна start--> */
 .projects__title {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 72px;
+  text-align: center;
+  color: #1A1A18;
   margin-top: 3%;
   margin-bottom: 3%;
 }
@@ -63,6 +112,9 @@ header {
   border-radius: 50%;
   border: none;
   padding: 4% 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .projects__button:hover {
@@ -70,31 +122,26 @@ header {
   color: white;
 }
 
-
-.projects__textbutton {
+.projects__link {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
   font-size: 3em;
-
   text-align: center;
   color: #1A1A18;
+  text-decoration: none;
 }
 
-/* Яна хедер финиш */
+.projects__link:hover {
+  color: white;
+}
 
-/* <!--  Проекты - Яна start--> */
-.projects__title {
-  font-family: 'Noah';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 58px;
-  line-height: 72px;
-  text-align: center;
-  color: #1A1A18;
+.projects__link:active {
+  text-decoration: none;
 }
 
 /* <!--  Проекты - Яна FİNİSH--> */
+
 /* Почему нас выбирают - Динара start */
 .values {
   background-color: #dde3e1;

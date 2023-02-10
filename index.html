@@ -6,30 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Vesna</title>
   </head>
   <body>
     <!-- Яна -->
-    <header>
-        
-        <div class="header__container container">               
+    <header>        
+        <div class="header__content">
+          <div class="header__container container-fluid">
             <div class="row">
-                <div class="header__logo col">
-                    <img src="assets/images/main/logo.png" alt="logo">
-                </div>
-                <div class="col"></div>
-                <div class="col"></div>
+                    <div class="col my-5 mx-5"><img src="assets/images/main/logo.png" alt="logo">
+                    </div>
+                    <div class="col my-5 mx-5 ">
+                      <ul class="header__menu nav nav-fill my-5 mx-5">
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">Портфолио</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                          <button>
+                            <a class="nav-link py-3 px-3">+7 (921) 888 88 88</a>
+                          </button>
+                        </li>
+                      </ul>
+                    </div> 
             </div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div class="row">
+                    <div class="col">
+                      <h5 class="header__company-name header-text">Ландшафтная студия VESNA</h5>
+                      <h1 class="header__title header-text">Создаем авторские ландшафты с вашим характером</h1>
+                      <h3 class="header__moto header-text">От идеи до полной реализации</h3>
+                    </div>
+            </div>
+          </div>
         </div>
     </header>
+    <!-- Яна header finish-->
     <main>
       <!-- Основной текст- Асият
         Что мы делаем? - Асият -->
@@ -40,14 +62,13 @@
       <div class="projects">
         <p class="projects__title">Наши проекты</p>
         <div class="projects__container">            
-            <img class="projects__img one" src="assets/images/main/Projects1.png" alt="our_projects">
-            <img class="projects__img two" src="assets/images/main/Projects2.png" alt="our_projects">
+            <img class="projects__img-one" src="assets/images/main/Projects1.png" alt="our_projects">
+            <img class="projects__img-two" src="assets/images/main/Projects2.png" alt="our_projects">
             <button class="projects__button">
-              <p class="projects__textbutton">Все проекты</p> 
-              <a href="здесь ссылка на другие проекты"></a>
+              <a href="здесь ссылка на другие проекты" class="projects__link">Все проекты</a>
             </button>
-            <img class="projects__img three" src="assets/images/main/Projects3.png" alt="our_projects">
-            <img class="projects__img four" src="assets/images/main/Projects4.png" alt="our_projects">
+            <img class="projects__img-three" src="assets/images/main/Projects3.png" alt="our_projects">
+            <img class="projects__img-four" src="assets/images/main/Projects4.png" alt="our_projects">
         </div>
       </div>
       <!--  Проекты - Яна FİNİSH-->
@@ -115,5 +136,10 @@
     </main>
     <!-- Асият -->
     <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
   </body>
 </html>

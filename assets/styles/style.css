@@ -18,7 +18,7 @@
 }
 
 .nav-link {
-  font-family: 'Geometria';
+  font-family: 'Noah';
   font-style: normal;
   font-weight: 500;
   font-size: 3em;
@@ -77,21 +77,18 @@
 
 /* <!--  Проекты - Яна start--> */
 .projects__title {
+  margin-top: 5%;
   font-family: 'Noah';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 58px;
   line-height: 72px;
   text-align: center;
   color: #1A1A18;
-  margin-top: 3%;
-  margin-bottom: 3%;
 }
 
 .projects__container {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 10%;
+  margin: 2% 5% 5% 5%;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -119,18 +116,19 @@
 }
 
 .projects__button {
-  width: 10%;
-  height: 22%;
-  margin-left: 40%;
-  margin-top: 15%;
+  width: 230px;
+  height: 230px;
   position: absolute;
   background: #FFFFFF;
   border-radius: 50%;
   border: none;
   padding: 4% 3%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  justify-self: center;
+  align-self: center;
 }
 
 .projects__button:hover {
@@ -142,7 +140,7 @@
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
-  font-size: 3em;
+  font-size: 24px;
   text-align: center;
   color: #1A1A18;
   text-decoration: none;

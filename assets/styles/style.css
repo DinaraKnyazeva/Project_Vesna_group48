@@ -26,17 +26,6 @@
   color: #FFFFFF;
 }
 
-.header-text {}
-
-.header__company-name {
-  font-family: 'Noah';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
-  color: #FFFFFF;
-}
-
 .header__title {
   font-family: 'Noah';
   font-style: normal;
@@ -57,11 +46,6 @@
 
 /* Яна хедер финиш */
 /* Основной текст - Асият start */
-HEAD .projects__link:active {
-  text-decoration: none;
-}
-
-
 .description_heading {
   font-family: "Noah";
   font-style: normal;
@@ -161,6 +145,10 @@ HEAD .projects__link:active {
   font-size: 3em;
   text-align: center;
   color: #1A1A18;
+  text-decoration: none;
+}
+
+.projects__link:active {
   text-decoration: none;
 }
 

@@ -161,6 +161,50 @@
 
 /* <!--  Проекты - Яна FİNİSH--> */
 
+
+.headeralyona {
+  display: grid;
+  background: rgba(153, 161, 142, 0.3);
+  width: 100%;
+  height: 333px;
+  margin-top: 400px;
+  position: absolute;
+}
+
+.sad {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  top: 446.76px;
+  left: 148px;
+}
+
+h2 {
+  width: 559px;
+  height: 144px;
+  top: 278px;
+  left: 1108px;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 72px;
+}
+
+.right {
+  padding-top: 200px;
+  margin-left: 100px;
+}
+
+img {
+  position: absolute;
+  left: -3.27%;
+  right: 39.97%;
+  top: 10.61%;
+  bottom: 11.4%;
+}
+
+
 /* Почему нас выбирают - Динара start */
 .values {
   background-color: #dde3e1;

@@ -9,7 +9,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 1950px;
+  height: 2250px;
+}
+
+.header__logo {
+  margin-top: 3%;
+  margin-left: 17%;
+  block-size: 90%;
+}
+
+.header__menu {
+  margin-top: 10%;
 }
 
 .nav-link {
@@ -18,6 +28,76 @@
   font-weight: 500;
   font-size: 3em;
   line-height: 24px;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+.menu__button {
+  margin-top: 0;
+}
+
+.menu__consult {
+  margin-top: 3%;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.menu__telephone {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+/* 
+.menu__button:active {
+  text-decoration: none;
+}
+
+.menu__button:hover {
+  background-color: #545A2F;
+  color: white;
+}
+ */
+.header__text {
+  margin-left: 18%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__company-name {
+  margin-top: 11%;
+  letter-spacing: 0.05em;
+  font-family: "Noah";
+  font-size: 48px;
+  line-height: 2;
+  color: #ffffff;
+}
+
+.header__title {
+  letter-spacing: 0.05em;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.header__moto {
+  letter-spacing: 0.05em;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 92px;
+  line-height: 2;
   color: #ffffff;
 }
 
@@ -111,8 +191,8 @@
 }
 
 .projects__button {
-  width: 230px;
-  height: 230px;
+  max-width: 230px;
+  max-height: 230px;
   position: absolute;
   background: #ffffff;
   border-radius: 50%;
@@ -135,7 +215,7 @@
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 2em;
   text-align: center;
   color: #1a1a18;
   text-decoration: none;
@@ -165,6 +245,7 @@
 .values {
   background-color: #dde3e1;
 }
+
 .values__container,
 .reviews {
   display: flex;
@@ -173,13 +254,15 @@
   margin: 0 auto;
   align-items: center;
 }
+
 .values__heading-wrapper,
 .reviews__heading-wrapper {
   margin: 3% 0 3% 0;
 }
 
 .values__heading-text,
-.reviews__heading-text {
+.reviews__heading-text,
+.questions__heading-text {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -207,17 +290,19 @@
 }
 
 .values__inner {
-  margin: 3%;
-  padding: 12%;
+  margin: 0 3% 0 3%;
+  padding: 5% 10% 5% 10%;
 }
 
 .values__icon {
-  width: 40%;
+  width: 20%;
 }
 
 .values__text,
 .reviews__text,
-.reviews__topic {
+.reviews__topic,
+.questions__text,
+.questions__instruction-text {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -271,11 +356,167 @@
 .reviews__page-icon {
   margin-top: 5%;
 }
+
+/* Отзывы - Динара end */
+
+/* Часто зад. вопросы - Динара start */
+.questions {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 3%;
+}
+.questions__block-text {
+}
+.questions__heading-wrapper {
+  margin: 0 0 5% 0;
+}
+.questions__title {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(20px + 8 * (100vw / 1920));
+  line-height: 35px;
+  color: #1a1a18;
+  position: relative;
+  cursor: pointer;
+}
+.questions__title:before,
+.questions__title:after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #545a2f;
+  position: absolute;
+  top: 10px;
+}
+.questions__title:before {
+  transform: rotate(90deg);
+  right: 0;
+}
+.questions__title:after {
+  transform: rotate(-180deg);
+  right: 0;
+}
+
+.questions__line {
+  border: 1px solid #979797;
+  width: 100%;
+}
+.questions__text_none {
+  display: none;
+}
+.questions__block-form {
+  background: #dde3e1;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+}
+.questions__caption-text,
+.application__text {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(20px + 18 * (100vw / 1920));
+  line-height: 47px;
+  text-align: center;
+  color: #1a1a18;
+}
+.questions__instruction-text {
+  margin: 0;
+}
+.questions__img {
+  width: 100%;
+}
+.questions__form-email {
+  width: 80%;
+  border: none;
+  padding: 2% 0 2% 2%;
+}
+.questions__form-checkbox {
+  width: 80%;
+  display: flex;
+  margin: 2%;
+}
+.questions__checkbox-text {
+  margin-left: 5%;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1a1a18;
+}
+.questions__link {
+  text-decoration: none;
+  color: #545a2f;
+}
+.questions__button,
+.application__button {
+  background: #545a2f;
+  border: none;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+}
+
+.application__container {
+  display: grid;
+  max-width: 60%;
+  margin: 0 auto;
+  grid-template-areas: "application__block-text application__vector-img1 application__button";
+  align-items: center;
+}
+.application__block-text {
+  grid-area: application__block-text;
+}
+.application__title {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(24px + 46 * (100vw / 1920));
+  line-height: 87px;
+  color: #1a1a18;
+}
+.application__text {
+  text-align: left;
+}
+.application__vector-img1 {
+  width: 80%;
+  grid-area: application__vector-img1;
+  padding-top: 40%;
+}
+.application__vector-img2 {
+  display: none;
+  grid-area: application__vector-img2;
+}
+.application__button {
+  grid-area: application__button;
+}
+.application__button-up {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9;
+}
+.application__button-img {
+  height: 80px;
+  width: 80px;
+}
 @media screen and (max-width: 320px) {
   .reviews {
     margin: 0;
     max-width: 100%;
   }
+
   .values__wrap-top,
   .values__wrap-bootom {
     display: grid;
@@ -284,7 +525,8 @@
   }
 
   .values__heading-text,
-  .reviews__heading-text {
+  .reviews__heading-text,
+  .questions__heading-text {
     font-family: "Noah";
     font-style: normal;
     font-weight: 300;
@@ -296,7 +538,9 @@
 
   .values__text,
   .reviews__text,
-  .reviews__topic {
+  .reviews__topic,
+  .questions__instruction-text,
+  .questions__text {
     font-family: "Noah";
     font-style: normal;
     font-weight: 300;
@@ -304,14 +548,17 @@
     line-height: 20px;
     color: #1a1a18;
   }
+
   .values__text {
     margin: 5% 0 0 10%;
   }
+
   .values__inner {
     display: flex;
     padding: 0;
     align-items: center;
   }
+
   .values__icon {
     width: 30%;
     height: 35%;
@@ -337,32 +584,56 @@
     line-height: 47px;
     color: #545a2f;
   }
+  .questions__block-form {
+    display: none;
+  }
+  .questions__title {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(20px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
+    line-height: 20px;
+    color: #1a1a18;
+    position: relative;
+    cursor: pointer;
+  }
+  .questions__caption-text,
+  .application__text {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(20px + (18 + 18 * 0.7) * ((100vw - 320px) / 1920));
+    line-height: 40px;
+    text-align: center;
+    color: #1a1a18;
+  }
+  .application__container {
+    display: grid;
+    grid-template-areas:
+      "application__block-text application__vector-img2"
+      "application__button application__button";
+    align-items: center;
+  }
+  .application__title {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(24px + (46 + 46 * 0.7) * ((100vw - 320px) / 1920));
+    line-height: 40px;
+    color: #1a1a18;
+  }
+  .application__text {
+    text-align: left;
+    line-height: 20px;
+  }
+  .application__vector-img2 {
+    height: 70%;
+    display: grid;
+    grid-area: application__vector-img2;
+    transform: rotate(10deg);
+  }
+  .application__vector-img1 {
+    display: none;
+  }
 }
-/* Отзывы - Динара end */
-
-/* Часто зад. вопросы - Динара start */
-.questions {
-  display: grid;
-  grid-template-columns: 1.8fr 1fr;
-  margin: 5% 13% 5% 15%;
-}
-.questions__block-text {
-}
-.questions__heading-wrapper {
-}
-.questions__button {
- 
-}
-.questions__heading-text {
-}
-.questions__item {
-}
-.questions__title {
-}
-.questions__text {
-}
-.questions__line {
-}
-.questions__block-form {
-}
-/* Часто зад. вопросы - Динара end */
+/* Часто зад. вопросы - Динара end */ ;

@@ -17,10 +17,11 @@
         <div class="header__content">
           <div class="header__container container-fluid">
             <div class="row">
-                    <div class="col my-5 mx-5"><img src="assets/images/main/logo.png" alt="logo">
+                    <div class="col-5">
+                      <img class="header__logo" src="assets/images/main/logo.png" alt="logo">
                     </div>
-                    <div class="col my-5 mx-5 ">
-                      <ul class="header__menu nav nav-fill my-5 mx-5">
+                    <div class="col-7 align-self-start">
+                      <ul class="header__menu nav nav-fill">
                         <li class="nav-item">
                           <a class="nav-link text-white" href="#">Главная</a>
                         </li>
@@ -34,19 +35,20 @@
                           <a class="nav-link text-white" href="#">Контакты</a>
                         </li>
                         <li class="nav-item">
-                          <button>
-                            <a class="nav-link py-3 px-3">+7 (921) 888 88 88</a>
+                          <button type="submit" class="menu__button btn btn-light btn-lg">
+                            <a class="menu__telephone nav-link py-4 px-5 text-body">+7 (921) 888 88 88</a>
                           </button>
+                          <p class="menu__consult">Бесплатная консультация</p>
                         </li>
                       </ul>
                     </div> 
             </div>
             <div class="row">
-                    <div class="col">
-                      <h5 class="header__company-name header-text">Ландшафтная студия VESNA</h5>
-                      <h1 class="header__title header-text">Создаем авторские ландшафты с вашим характером</h1>
-                      <h3 class="header__moto header-text">От идеи до полной реализации</h3>
-                    </div>
+              <div class="header__text col">
+                <h5 class="header__company-name">Ландшафтная студия VESNA</h5>
+                <h1 class="header__title header-text">Создаем авторские ландшафты <br> с вашим характером</h1>
+                <h3 class="header__moto header-text">От идеи до полной реализации</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -190,10 +192,57 @@
           <div class="questions__heading-wrapper">
             <p class="questions__heading-text">Часто задаваемые вопросы</p>
           </div>
+            <p class="questions__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+            <p class="questions__text questions__text_none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e</p>
+            <p class="questions__line"></p>
+            <p class="questions__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+            <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e</p>
+            <p class="questions__line"></p>
+            <p class="questions__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+            <p class="questions__text questions__text_none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e</p>
+            <p class="questions__line"></p>
+            <p class="questions__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+            <p class="questions__text questions__text_none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e</p>
+            <p class="questions__line"></p>
+            <p class="questions__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+            <p class="questions__text questions__text_none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e</p>
+            <p class="questions__line"></p>
         </div>
-        <div class="questions__block-form"></div>
+        <div class="questions__block-form">
+            <p class="questions__caption-text">Как выбрать 
+              растения для сада?</p>
+              <p class="questions__instruction-text">Пришлем инструкцию!</p>
+              <div>
+                <img class="questions__img" src="assets/images/main/questionsAlbum.png" alt="album">
+              </div>
+          <input
+            type="email"
+            class="questions__form-email"
+            placeholder="Ваш Email"
+            id="email"
+          />
+          <div class="questions__form-checkbox">
+            <input type="checkbox" id="scales" name="scales" checked>
+            <label class="questions__checkbox-text" for="scales">Я даю согласие на обработку своих <a class="questions__link" href="#">персональных данных</a>
+        </label>
+          </div>
+          <input class="questions__button"
+       type="button"
+       value="Хочу инструкцию">
+        </div>
       </div>
-      
+          <div class="application__container">
+            <div class="application__block-text">
+              <p class="application__title">Остались вопросы?</p>
+              <p class="application__text">Пригласите ландшафтного дизайнера на участок!</p>
+            </div>
+            <img class="application__vector-img1" src="assets/images/main/questionsVector1.svg" alt="Стрелка">
+            <img class="application__vector-img2" src="assets/images/main/questionsVector2.svg" alt="Стрелка">
+          <button class="application__button">Перезвоните мне</button>
+          </div>
+        <div class="application__button-up">
+          <a href="#" title="Поднять страницы на сайтах вверх"><img  class="application__button-img" src="assets/images/main/questionsbutton.svg" alt="Поднять страницы на сайтах вверх"></a>
+        </div>
       <!-- Часто зад. вопросы - Динара end-->
     </main>
     <!-- Асият -->

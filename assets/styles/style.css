@@ -174,12 +174,12 @@
   align-items: center;
 }
 .values__heading-wrapper,
-.reviews____heading-wrapper {
+.reviews__heading-wrapper {
   margin: 3% 0 3% 0;
 }
 
 .values__heading-text,
-.reviews____heading-text {
+.reviews__heading-text {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -216,8 +216,8 @@
 }
 
 .values__text,
-.reviews____text,
-.reviews____topic {
+.reviews__text,
+.reviews__topic {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -231,30 +231,30 @@
 
 /* Отзывы - Динара start */
 
-.reviews____heading-text_black {
+.reviews__heading-text_black {
   color: #000000;
 }
-.reviews____photo {
+.reviews__photo {
   width: 100%;
   height: 100%;
 }
-.reviews____wrap {
+.reviews__wrap {
   display: grid;
-  grid-template-areas: "reviews____photo reviews____inner";
+  grid-template-areas: "reviews__photo reviews__inner";
   max-width: 87%;
   margin: 0 auto;
 }
-.reviews____photo {
-  grid-area: reviews____photo;
+.reviews__photo {
+  grid-area: reviews__photo;
   width: 100%;
 }
-.reviews____inner {
-  grid-area: reviews____inner;
+.reviews__inner {
+  grid-area: reviews__inner;
   padding-left: 12%;
   display: grid;
   grid-template-rows: 15% 10% 10% auto 5%;
 }
-.reviews____name {
+.reviews__name {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -262,13 +262,13 @@
   line-height: 47px;
   color: #545a2f;
 }
-.reviews____topic_green {
+.reviews__topic_green {
   color: #545a2f;
 }
-.reviews____arrow-icon {
+.reviews__arrow-icon {
   margin-left: 70%;
 }
-.reviews____page-icon {
+.reviews__page-icon {
   margin-top: 5%;
 }
 @media screen and (max-width: 320px) {
@@ -284,7 +284,7 @@
   }
 
   .values__heading-text,
-  .reviews____heading-text {
+  .reviews__heading-text {
     font-family: "Noah";
     font-style: normal;
     font-weight: 300;
@@ -295,8 +295,8 @@
   }
 
   .values__text,
-  .reviews____text,
-  .reviews____topic {
+  .reviews__text,
+  .reviews__topic {
     font-family: "Noah";
     font-style: normal;
     font-weight: 300;
@@ -317,19 +317,19 @@
     height: 35%;
     margin-right: 10px;
   }
-  .reviews____wrap {
+  .reviews__wrap {
     display: grid;
     grid-template-areas:
-      "reviews____inner"
-      "reviews____photo";
+      "reviews__inner"
+      "reviews__photo";
   }
-  .reviews____inner {
+  .reviews__inner {
     padding-left: 0%;
   }
-  .reviews____arrow-icon {
+  .reviews__arrow-icon {
     display: none;
   }
-  .reviews____name {
+  .reviews__name {
     font-family: "Noah";
     font-style: normal;
     font-weight: 300;
@@ -341,4 +341,28 @@
 /* Отзывы - Динара end */
 
 /* Часто зад. вопросы - Динара start */
+.questions {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  margin: 5% 13% 5% 15%;
+}
+.questions__block-text {
+}
+.questions__heading-wrapper {
+}
+.questions__button {
+ 
+}
+.questions__heading-text {
+}
+.questions__item {
+}
+.questions__title {
+}
+.questions__text {
+}
+.questions__line {
+}
+.questions__block-form {
+}
 /* Часто зад. вопросы - Динара end */

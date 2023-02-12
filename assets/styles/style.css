@@ -3,6 +3,11 @@
   src: url(../fonts/Noah-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Geometria";
+  src: url(../fonts/geometria_light.otf);
+}
+
 /* Яна хедер старт */
 .header__content {
   background-image: url(../images/main/header_background.png);
@@ -643,9 +648,18 @@
 .footer {
   background-color: #555934;
   width: 100vw;
-  
+
 }
 
-
+.footer-contacts {
+  font-family: 'Geometria';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
 
 /* Футер - Асият end */

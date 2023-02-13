@@ -13,32 +13,21 @@
   background-image: url(../images/main/header_background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 2250px;
+  max-width: 100%;
 }
 
 .header__logo {
-  margin-top: 3%;
-  margin-left: 17%;
-  block-size: 90%;
-}
-
-.header__menu {
-  margin-top: 10%;
+  margin-top: 7%;
+  margin-left: 10%;
 }
 
 .nav-link {
   font-family: "Noah";
   font-style: normal;
   font-weight: 500;
-  font-size: 3em;
+  font-size: calc(20px + 2 * (100vw / 1920));
   line-height: 24px;
   color: #ffffff;
-  letter-spacing: 0.05em;
-}
-
-.menu__button {
-  margin-top: 0;
 }
 
 .menu__consult {
@@ -46,7 +35,7 @@
   font-family: "Noah";
   font-style: normal;
   font-weight: 200;
-  font-size: 40px;
+  font-size: 20px;
   line-height: 25px;
   text-align: center;
   color: #ffffff;
@@ -56,12 +45,10 @@
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
-  font-size: 45px;
+  font-size: 24px;
   text-align: center;
-  letter-spacing: 0.05em;
-}
+  }
 
-/* 
 .menu__button:active {
   text-decoration: none;
 }
@@ -70,58 +57,41 @@
   background-color: #545A2F;
   color: white;
 }
- */
+
 .header__text {
-  margin-left: 18%;
+  margin-left: 13%;  
   display: flex;
   flex-direction: column;
 }
 
 .header__company-name {
-  margin-top: 11%;
-  letter-spacing: 0.05em;
+  margin-top: 5%;
   font-family: "Noah";
-  font-size: 48px;
+  font-size: calc(16px + 8 * (100vw / 1920));
   line-height: 2;
   color: #ffffff;
 }
 
 .header__title {
-  letter-spacing: 0.05em;
   font-family: "Noah";
   font-style: normal;
   font-weight: 700;
-  font-size: 120px;
+  font-size: calc(24px + 46 * (100vw / 1920));
   line-height: 1;
   color: #ffffff;
 }
 
 .header__moto {
-  letter-spacing: 0.05em;
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
-  font-size: 92px;
+  font-size: calc(18px + 30 * (100vw / 1920));
   line-height: 2;
   color: #ffffff;
 }
 
-.header__title {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 70px;
-  line-height: 87px;
-  color: #ffffff;
-}
-
-.header__moto {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 60px;
-  color: #ffffff;
+.header_link {
+  margin-left: 13%; 
 }
 
 /* Яна хедер финиш */
@@ -162,21 +132,26 @@
 
 /* Что мы делаем? - Асият start */
 /* Что мы делаем? - Асият finish */
+/* Алена старт */
+/* 
 
+/* алена финиш - коррекция яна */ */
 /* <!--  Проекты - Яна start--> */
+.test {
+  font-size: 58px;
+}
 .projects__title {
   margin-top: 5%;
   font-family: "Noah";
   font-style: normal;
+  font-size: calc(24px + 34 * (100vw / 1920));
   font-weight: 500;
-  font-size: 58px;
   line-height: 72px;
   text-align: center;
   color: #1a1a18;
 }
 
 .projects__container {
-  margin: 2% 5% 5% 5%;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -189,18 +164,22 @@
 }
 
 .one {
+  width: 100%;
   grid-area: one;
 }
 
 .two {
+  width: 100%;
   grid-area: two;
 }
 
 .three {
+  width: 100%;
   grid-area: three;
 }
 
 .four {
+  width: 100%;
   grid-area: four;
 }
 
@@ -211,7 +190,7 @@
   background: #ffffff;
   border-radius: 50%;
   border: none;
-  padding: 4% 3%;
+  padding: 3% 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,7 +208,7 @@
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
-  font-size: 2em;
+  font-size: 24px;
   text-align: center;
   color: #1a1a18;
   text-decoration: none;
@@ -242,17 +221,6 @@
 .projects__link:hover {
   color: white;
 }
-
-.projects__title {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 58px;
-  line-height: 72px;
-  text-align: center;
-  color: #1a1a18;
-}
-
 /* <!--  Проекты - Яна FİNİSH--> */
 
 /* Почему нас выбирают - Динара start */
@@ -657,6 +625,7 @@
 .footer {
   background-color: #555934;
   width: 100%;
+  margin-top: 5%;
   }
 
 .footer .container {

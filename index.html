@@ -14,14 +14,14 @@
   <body>
     <!-- Яна -->
     <header>        
-        <div class="header__content">
+        <div class="header__content mb-5">
           <div class="header__container container-fluid">
             <div class="row">
-                    <div class="col-5">
+                    <div class="col-3">
                       <img class="header__logo" src="assets/images/main/logo.png" alt="logo">
                     </div>
-                    <div class="col-7 align-self-start">
-                      <ul class="header__menu nav nav-fill">
+                    <div class="col-9">
+                      <ul class="header__menu nav nav-fill d-flex justify-content-evenly align-items-center">
                         <li class="nav-item">
                           <a class="nav-link text-white" href="#">Главная</a>
                         </li>
@@ -35,8 +35,8 @@
                           <a class="nav-link text-white" href="#">Контакты</a>
                         </li>
                         <li class="nav-item">
-                          <button type="submit" class="menu__button btn btn-light btn-lg">
-                            <a class="menu__telephone nav-link py-4 px-5 text-body">+7 (921) 888 88 88</a>
+                          <button type="submit" class="menu__button mt-4">
+                            <a class="menu__telephone nav-link text-body">+7 (921) 888 88 88</a>
                           </button>
                           <p class="menu__consult">Бесплатная консультация</p>
                         </li>
@@ -50,10 +50,19 @@
                 <h3 class="header__moto header-text">От идеи до полной реализации</h3>
               </div>
             </div>
+            <div class="row">
+              <a class="header_link" href="ссылка на другие проекты">
+                <img src="assets/images/main/header_project.png" alt="link_to_projects">
+              </a>
+              <!-- <a class="header_link" href="ссылка на другие проекты">
+              <img src="assets/images/main/header_icon_arrows.png" alt="arrows">
+              </a>  
+              <a class="header_link" href="ссылка на другие проекты">
+              <img src="assets/images/main/header_icon_projects.png" alt="other_projects">   
+              </a>  -->       
+            </div>
           </div>
-        </div>
-        <div class="row"></div>
-        <div class="row"></div>
+        </div>          
       </div>
     </header>
     <!-- Яна header finish-->
@@ -87,10 +96,12 @@
       <!-- Что мы делаем? - Асият finish -->
 
       <!-- Как выбрать растения - Алена -->
-
+      
+<!-- Как выбрать растения - Алена фииниш -->
       <!--  Проекты - Яна start-->
       <div class="projects">
         <p class="projects__title">Наши проекты</p>
+        <p class="test">Наши проекты test</p>
         <div class="projects__container"> 
           <button class="projects__button">
             <a href="здесь ссылка на другие проекты" class="projects__link">Все проекты</a>
@@ -231,9 +242,7 @@
             <label class="questions__checkbox-text" for="scales">Я даю согласие на обработку своих <a class="questions__link" href="#">персональных данных</a>
         </label>
           </div>
-          <input class="questions__button"
-       type="button"
-       value="Хочу инструкцию">
+          <input class="questions__button" type="button" value="Хочу инструкцию">
         </div>
       </div>
           <div class="application__container">

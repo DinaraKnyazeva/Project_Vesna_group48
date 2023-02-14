@@ -88,6 +88,7 @@
   font-size: calc(18px + 30 * (100vw / 1920));
   line-height: 2;
   color: #ffffff;
+  margin-bottom: 15%;
 }
 
 .header_link {
@@ -137,9 +138,6 @@
 
 /* алена финиш - коррекция яна */ */
 /* <!--  Проекты - Яна start--> */
-.test {
-  font-size: 58px;
-}
 .projects__title {
   margin-top: 5%;
   font-family: "Noah";

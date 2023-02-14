@@ -59,7 +59,7 @@
 }
 
 .header__text {
-  margin-left: 13%;  
+/*   margin-left: 3%;   */
   display: flex;
   flex-direction: column;
 }
@@ -89,6 +89,11 @@
   line-height: 2;
   color: #ffffff;
   margin-bottom: 15%;
+}
+
+.header__branch {
+  max-width: 100%;
+  margin-right: 0;
 }
 
 .header_link {
@@ -138,6 +143,17 @@
 
 /* алена финиш - коррекция яна */ */
 /* <!--  Проекты - Яна start--> */
+/* .test {
+  font-size: 58px;
+} */
+/* calc(24px + 34 * (100vw / 1920)); */
+/* .projects {  
+  margin-bottom: 10%;
+} */
+.projects {
+  margin-bottom: 5%;
+}
+
 .projects__title {
   margin-top: 5%;
   font-family: "Noah";
@@ -150,9 +166,9 @@
 }
 
 .projects__container {
+  margin: 0 auto;
+  max-width: 95%;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "one two"
     "three four";
@@ -161,24 +177,22 @@
   justify-items: stretch;
 }
 
-.one {
-  width: 100%;
+.projects__img-one {
   grid-area: one;
+  max-width: 100%;
 }
 
-.two {
-  width: 100%;
+.projects__img-two {
   grid-area: two;
+  max-width: 100%;
 }
-
-.three {
-  width: 100%;
+.projects__img-three {
   grid-area: three;
+  max-width: 100%;
 }
-
-.four {
-  width: 100%;
+.projects__img-four {
   grid-area: four;
+  max-width: 100%;
 }
 
 .projects__button {

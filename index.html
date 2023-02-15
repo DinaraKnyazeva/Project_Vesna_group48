@@ -12,16 +12,16 @@
     <title>Vesna</title>
   </head>
   <body>
-    <!-- Яна -->
+      <!-- Яна -->
     <header>        
-        <div class="header__content">
+        <div class="header__content mb-5">
           <div class="header__container container-fluid">
             <div class="row">
-                    <div class="col-5">
+                    <div class="col-3">
                       <img class="header__logo" src="assets/images/main/logo.png" alt="logo">
                     </div>
-                    <div class="col-7 align-self-start">
-                      <ul class="header__menu nav nav-fill">
+                    <div class="col-9">
+                      <ul class="header__menu nav nav-fill d-flex justify-content-evenly align-items-center">
                         <li class="nav-item">
                           <a class="nav-link text-white" href="#">Главная</a>
                         </li>
@@ -35,8 +35,8 @@
                           <a class="nav-link text-white" href="#">Контакты</a>
                         </li>
                         <li class="nav-item">
-                          <button type="submit" class="menu__button btn btn-light btn-lg">
-                            <a class="menu__telephone nav-link py-4 px-5 text-body">+7 (921) 888 88 88</a>
+                          <button type="submit" class="menu__button mt-4">
+                            <a class="menu__telephone nav-link text-body">+7 (921) 888 88 88</a>
                           </button>
                           <p class="menu__consult">Бесплатная консультация</p>
                         </li>
@@ -44,16 +44,30 @@
                     </div> 
             </div>
             <div class="row">
-              <div class="header__text col">
+              <div class="header__text col-9 d-flex justify-content-center">
                 <h5 class="header__company-name">Ландшафтная студия VESNA</h5>
                 <h1 class="header__title header-text">Создаем авторские ландшафты <br> с вашим характером</h1>
                 <h3 class="header__moto header-text">От идеи до полной реализации</h3>
               </div>
+              <div class="col-3 d-flex align-items-center justify-content-end">
+                <img class="header__branch" src="assets/images/main/header_branch.png" alt="branch">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col d-flex flex-row justify-content-evenly">
+                <a class="header__link" href="ссылка на другие проекты">
+                  <img src="assets/images/main/header_project.png" alt="link_to_projects">
+                </a>
+                <div class="header__link-wrapper align-self-center m-2">
+                  <img class="header_link-icon my-5" src="assets/images/main/header_icon_arrows.png" alt="arrows">
+                </div>  
+                <div class="header__link-wrapper align-self-center">          
+                  <img class="header_link-icon" src="assets/images/main/header_icon_projects.png" alt="other_projects">   
+                </div>  
+              </div>     
             </div>
           </div>
-        </div>
-        <div class="row"></div>
-        <div class="row"></div>
+        </div>          
       </div>
     </header>
     <!-- Яна header finish-->
@@ -88,19 +102,21 @@
 
       <!-- Как выбрать растения - Алена start-->
       <div class="instruction">
-        <p class="instruction__caption-text">Как выбрать 
+        <div class="instruction__box">
+        </div>
+        <div class="instruction__caption-block">
+          <p class="instruction__caption-text">Как выбрать 
           растения для сада?</p>
-        <div class="instruction__block-form">
-          <div class="instruction__box-img">
+        </div>
+        <div class="instruction__box-img">
             <img class="instruction__img" src="assets/images/main/questionsAlbum.png" alt="album">
-          </div>
-          <div class="instruction__box-text">            
+        </div>
+        <div class="instruction__block-form">            
             <p class="instruction__text">Пришлем инструкцию!</p>
             <input
             type="email"
             class="instruction__form-email"
             placeholder="Ваш Email"
-            id="email"
             />
             <div class="instruction__form-checkbox">
               <input type="checkbox" id="scales" name="scales" checked>
@@ -109,9 +125,28 @@
             <input class="instruction__button"
             type="button"
             value="Хочу инструкцию">
-          </div>
+          
         </div>
       </div>
+      <div class="instruction-mobile">
+        <p class="instruction-mobile__caption-text">Как выбрать 
+          растения для сада?</p>
+          <p class="instruction-mobile__instruction-text">Пришлем инструкцию!</p>
+          <div>
+            <img class="instruction-mobile__img" src="assets/images/main/questionsAlbum.png" alt="album">
+          </div>
+      <input
+        type="email"
+        class="instruction-mobile__form-email"
+        placeholder="Ваш Email"
+      />
+      <div class="instruction-mobile__form-checkbox">
+        <input type="checkbox" name="scales" checked>
+        <label class="instruction-mobile__checkbox-text" for="scales">Я даю согласие на обработку своих <a class="questions__link" href="#">персональных данных</a>
+    </label>
+      </div>
+      <input class="instruction-mobile__button" type="button" value="Хочу инструкцию">
+    </div>
       <!-- Как выбрать растения - Алена finish-->
 
       <!--  Проекты - Яна start-->
@@ -122,9 +157,9 @@
             <a href="здесь ссылка на другие проекты" class="projects__link">Все проекты</a>
             <img class="projects__arrow-button" src="assets/images/main/icon_button_arrow.png" alt="arrow">
           </button> 
-          <div>
+          <div>        
             <img class="projects__img-one" src="assets/images/main/Projects1.png" alt="our_projects">
-          </div>          
+          </div>  
           <div>
             <img class="projects__img-two" src="assets/images/main/Projects2.png" alt="our_projects">
           </div>
@@ -133,8 +168,41 @@
           </div>
           <div>
             <img class="projects__img-four" src="assets/images/main/Projects4.png" alt="our_projects">
+          </div>          
+        </div>
+      </div>
+      <div class="four-steps">
+        <div class="four-steps__title col">
+          <p>4 шага до реализации проекта</p>
+          <p class="four-steps__title-dream">вашей мечты</p> 
+        </div>      
+        <div class="four-steps__container row">
+          <div class="col-6">
+            <div class="row my-5">
+              <!-- <img src="assets/images/main/01.png" alt="one"> -->
+              <p class="four-steps__description">Расскажите нам, что вы хотите увидеть 
+              на своем участке</p>  
+              <p>Побеседуйте с нашим специалистом. Он приедет к вам в любое удобное время.</p>
+            </div>
+            <div class="row">
+              <!-- <img class="four-steps__icon" src="assets/images/main/03.png" alt="three"> -->
+              <p class="four-steps__description">Дождитесь окончания ландшафтных работ</p>
+              <p>Вы получите идеальный участок с хорошим дренажом, мощеными дорожками и площадками, высаженными растениями — деревьями, кустарниками, цветами 
+                и газоном.</p> 
+              </div>  
+          </div> 
+          <div class="col-6">
+            <div class="row my-5">
+              <!-- <img class="four-steps__icon" src="assets/images/main/02.png" alt="two"> -->
+              <p class="four-steps__description">Оцените проект, который разработают наши специалисты, и внесите изменения</p>
+              <p>Архитектор разработает проект ландшафтного дизайна и сделает 3D-визуализацию.</p>
+            </div>
+            <div class="row">
+              <!-- <img class="four-steps__icon" src="assets/images/main/04.png" alt="four"> -->
+              <p class="four-steps__description">Делегируйте уход за участком профессионалам</p>
+              <p>При необходимости мы будем приезжать регулярно и следить за состоянием участка.</p>
+            </div>
           </div>
-          
         </div>
       </div>
       <!--  Проекты - Яна FİNİSH-->
@@ -173,7 +241,7 @@
               <p class="values__text">Делаем с умом под любой бюджет</p>
             </div>
           </div>
-          <div class="values__wrap-bootom">
+          <div class="values__wrap-button">
             <div class="values__inner">
               <img
                 class="values__icon"
@@ -262,13 +330,11 @@
             id="email"
           />
           <div class="questions__form-checkbox">
-            <input type="checkbox" id="scales" name="scales" checked>
+            <input type="checkbox" name="scales" checked>
             <label class="questions__checkbox-text" for="scales">Я даю согласие на обработку своих <a class="questions__link" href="#">персональных данных</a>
         </label>
           </div>
-          <input class="questions__button"
-       type="button"
-       value="Хочу инструкцию">
+          <input class="questions__button" type="button" value="Хочу инструкцию">
         </div>
       </div>
           <div class="application__container">
@@ -278,7 +344,9 @@
             </div>
             <img class="application__vector-img1" src="assets/images/main/questionsVector1.svg" alt="Стрелка">
             <img class="application__vector-img2" src="assets/images/main/questionsVector2.svg" alt="Стрелка">
-          <button class="application__button">Перезвоните мне</button>
+            <div class="application__button-container">
+              <button class="application__button">Перезвоните мне</button>
+            </div>
           </div>
         <div class="application__button-up">
           <a href="#" title="Поднять страницы на сайтах вверх"><img  class="application__button-img" src="assets/images/main/questionsbutton.svg" alt="Поднять страницы на сайтах вверх"></a>
@@ -314,6 +382,7 @@
         </div>
       </div>
     </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/normalize.css" />
-    <link rel="stylesheet" href="assets/styles/style.css" />
+    <!-- <link rel="stylesheet" href="assets/styles/style.css" /> -->
     <link rel="stylesheet" href="assets/styles/portfolio.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -16,14 +16,47 @@
     <title>Портфолио</title>
   </head>
   <body>
-    <header></header>
-    <main>
-      <div class="portfolio">
-        <div class="portfolio__container">
+    <div class="root">
+      <header></header>
+      <main>
+        <div class="portfolio">
           <div class="portfolio__block-text"></div>
+          <div class="portfolio__block-img">
+            <img
+              class="portfolio__img-one"
+              src="assets/images/portfolio/portfolio1.jpg"
+              alt="photo"
+            />
+            <img
+              class="portfolio__img-two"
+              src="assets/images/portfolio/portfolio2.jpg"
+              alt="photo"
+            />
+            <img
+              class="portfolio__img-three"
+              src="assets/images/portfolio/portfolio3.jpg"
+              alt="photo"
+            />
+            <div class="portfolio__quote-container">
+              <p class="portfolio__quote-text">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua”.
+              </p>
+            </div>
+            <img
+              class="portfolio__img-four"
+              src="assets/images/portfolio/portfolio4.jpg"
+              alt="photo"
+            />
+          </div>
+          <div class="portfolio__block-button">
+            <button class="portfolio__button">
+              <a class="portfolio__link" href="#">Посмотреть весь проект</a>
+            </button>
+          </div>
         </div>
-      </div>
-    </main>
-    <footer></footer>
+      </main>
+      <footer></footer>
+    </div>
   </body>
 </html>

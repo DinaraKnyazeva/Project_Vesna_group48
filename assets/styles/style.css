@@ -163,7 +163,50 @@
 /* Что мы делаем? - Асият start */
 /* Что мы делаем? - Асият finish */
 
+/* Как выбрать растения - Алена start */
+.instruction__block-form {
+  background: #dde3e1;
+  display: grid;
+  grid-template-areas: "instruction__box-img instruction__box-text";
+  height: 25vh;
+}
+.instruction__caption-text {
+  margin: 0 10% 1% 60%;
+}
+.instruction__box-img {
+  grid-area: instruction__box-img;
+}
+.instruction__box-text {
+  grid-area: instruction__box-text;
+  width: 70%;
+}
+.instruction__img {
+  height: 60vh;
+  position: relative;
+  bottom: 35%;
+  left: 20%;
+  width: 35vw;
+}
+.instruction__button {
+  background: #545a2f;
+  border: none;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+}
+/* Как выбрать растения - Алена finish */
+
 /* <!--  Проекты - Яна start--> */
+.projects {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
 .projects__title {
   margin-top: 5%;
   font-family: "Noah";
@@ -176,10 +219,7 @@
 }
 
 .projects__container {
-  margin: 2% 5% 5% 5%;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "one two"
     "three four";
@@ -188,20 +228,24 @@
   justify-items: stretch;
 }
 
-.one {
+.projects__img-one {
   grid-area: one;
+  max-width: 100%;
 }
 
-.two {
+.projects__img-two {
   grid-area: two;
+  max-width: 100%;
 }
 
-.three {
+.projects__img-three {
   grid-area: three;
+  max-width: 100%;
 }
 
-.four {
+.projects__img-four {
   grid-area: four;
+  max-width: 100%;
 }
 
 .projects__button {
@@ -276,7 +320,8 @@
 
 .values__heading-text,
 .reviews__heading-text,
-.questions__heading-text {
+.questions__heading-text,
+.instruction__caption-text {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -316,7 +361,8 @@
 .reviews__text,
 .reviews__topic,
 .questions__text,
-.questions__instruction-text {
+.questions__instruction-text,
+.instruction__text {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -381,8 +427,6 @@
   margin: 0 auto;
   padding: 3%;
 }
-.questions__block-text {
-}
 .questions__heading-wrapper {
   margin: 0 0 5% 0;
 }
@@ -445,17 +489,20 @@
 .questions__img {
   width: 100%;
 }
-.questions__form-email {
+.questions__form-email,
+.instruction__form-email {
   width: 80%;
   border: none;
   padding: 2% 0 2% 2%;
 }
-.questions__form-checkbox {
+.questions__form-checkbox,
+.instruction__form-checkbox {
   width: 80%;
   display: flex;
   margin: 2%;
 }
-.questions__checkbox-text {
+.questions__checkbox-text,
+.instruction__checkbox-text {
   margin-left: 5%;
   font-family: "Noah";
   font-style: normal;
@@ -540,7 +587,9 @@
 
   .values__heading-text,
   .reviews__heading-text,
-  .questions__heading-text {
+  .questions__heading-text,
+  .instruction__caption-text,
+  .instruction__text {
     font-family: "Noah";
     font-style: normal;
     font-weight: 300;
@@ -657,7 +706,7 @@
 .footer {
   background-color: #555934;
   width: 100%;
-  }
+}
 
 .footer .container {
   padding: 0;
@@ -679,30 +728,32 @@
 }
 
 .footer-contacts a {
-  font-family: 'Geometria';
+  font-family: "Geometria";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
   letter-spacing: 1px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   margin-top: 61px;
   margin-bottom: 22px;
-  }
+}
 
 .footer-copyright {
-  font-family: 'Noah';
+  font-family: "Noah";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.7;
   margin-bottom: 20px;
-  }
+}
 
-.footer-logo, .socials, .policy {
+.footer-logo,
+.socials,
+.policy {
   display: flex;
 }
 
@@ -712,7 +763,7 @@
   margin-bottom: 22px;
 }
 
-.socials{
+.socials {
   margin-top: 38px;
   margin-bottom: 98px;
 }
@@ -721,17 +772,18 @@
   margin-bottom: 20px;
 }
 
-.socials, .policy {
-justify-content: end;
+.socials,
+.policy {
+  justify-content: end;
 }
 
 .policy-link {
-  font-family: 'Noah';
+  font-family: "Noah";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
-  }
+}
 /* Футер - Асият end */

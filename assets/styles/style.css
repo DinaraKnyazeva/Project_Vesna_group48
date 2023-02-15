@@ -99,17 +99,51 @@ header {
 }
 
 .header__branch {
+  position: absolute;
   max-width: 75%;
   margin-right: 0;
 }
 
-/* .header__link-wrapper {
-display: flex;
-
-} */
-
 .header_link-icon{
   max-width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .header__menu-wrapper,
+  .header_link-icon {
+    display: none;
+  }
+
+  .header__branch {
+    position: absolute;
+    max-width: 50%;
+  }
+  .header__link-img {
+    max-width: 50%;
+  }
+
+  .header__company-name {
+    margin-top: 10%;
+    margin-left: 1%;
+    font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
+    margin-left: 1%;
+  }
+  
+  .header__title {
+    font-size: calc(24px + (46 + 46 * 0.7) * ((100vw - 320px) / 1920));
+    margin-left: 1%;
+  }
+  
+  .header__moto {
+    font-size: calc(18px + (30 + 30 * 0.7) * ((100vw - 320px) / 1920));
+    margin-left: 1%;
+  }
+
 }
 /* Яна хедер финиш */
 /* Основной текст - Асият start */

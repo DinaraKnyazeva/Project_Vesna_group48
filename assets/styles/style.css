@@ -163,8 +163,50 @@ header {
   margin-bottom: 196px;
 }
 
-.description__photo{
+.description__photo {
   width: 32%;
+}
+
+.advantages__heading {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59.95px;
+  text-align: center;
+  color: #1a1a18;
+  margin-bottom: 0;
+}
+
+.advantages li {
+  width: 30.3%;
+  margin: 0;
+  padding-left: 4.7%;
+	list-style: none;
+	background-image: url(../images/main/advantage-check.svg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 9.5%;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29.98px;
+}
+
+.advantages li:first-child {
+  margin-top: 199px;
+  margin-left: 46.4%;
+}
+
+.advantages li:nth-child(2) {
+  margin-top: 156px;
+  margin-left: 49%;
+}
+
+.advantages li:last-child {
+  margin-top: 161px;
+  margin-left: 50.89%;
 }
 
 /* Основной текст - Асият finish */
@@ -201,6 +243,11 @@ header {
   background: #dde3e1;
   height: 30vh;
 }
+.instruction__inner-form {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 25% 15% 30% 30%;
+}
 .instruction__box-img {
   grid-area: instruction__box-img;
   background: #dde3e1;
@@ -209,8 +256,9 @@ header {
   align-items: center;
 }
 .instruction__img {
-  margin-left: 10%;
-  height: 60vh;
+  margin-left: 15%;
+  height: 200%;
+  max-width: 75%;
 }
 .instruction__button {
   background: #545a2f;
@@ -223,7 +271,7 @@ header {
   text-align: center;
   color: #ffffff;
   width: 40%;
-  height: 15%;
+  height: 50%;
 }
 .instruction-mobile {
   display: none;
@@ -316,7 +364,6 @@ header {
   color: white;
 }
 
-
 .four-steps {
   margin: 10% 10% 10% 10%;
 }
@@ -330,7 +377,7 @@ header {
   color: #333333;
 }
 
-.four-steps__description-two{
+.four-steps__description-two {
   margin-left: 2%;
 }
 
@@ -341,21 +388,21 @@ header {
 
 .four-steps__bold-text,
 .four-steps__text {
-  font-family: 'Noah';
+  font-family: "Noah";
   font-style: normal;
-  font-size: calc(16px + 12 * (100vw / 1920));;
-  color: #000000; 
+  font-size: calc(16px + 12 * (100vw / 1920));
+  color: #000000;
 }
 
 .four-steps__number-one,
 .four-steps__number-two,
 .four-steps__number-three,
 .four-steps__number-four {
-  font-family: 'MarckScript-Regular';
+  font-family: "MarckScript-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: calc(64px + 32 * (100vw / 1920));
-  color: #545A2F;
+  color: #545a2f;
 }
 
 @media screen and (max-width: 320px) {
@@ -380,7 +427,7 @@ header {
   .projects__link {
     color: white;
   }
-  
+
   .projects__arrow-button {
     display: none;
   }
@@ -392,11 +439,12 @@ header {
 
   .projects__container {
     display: grid;
-    grid-template-areas: "projects__img-one"
-    "projects__img-two"
-    "projects__img-three"
-    "projects__img-four"
-    "projects__button";
+    grid-template-areas:
+      "projects__img-one"
+      "projects__img-two"
+      "projects__img-three"
+      "projects__img-four"
+      "projects__button";
   }
 
   .four-steps__container-fluid {
@@ -414,12 +462,12 @@ header {
     font-size: calc(16px + (12 + 12 * 0.7) * ((100vw - 320px) / 1920));
   }
 
-.four-steps__number-one,
-.four-steps__number-two,
-.four-steps__number-three,
-.four-steps__number-four {
-  font-size: calc(64px + (32 + 32 * 0.7) * ((100vw - 320px) / 1920));
-}
+  .four-steps__number-one,
+  .four-steps__number-two,
+  .four-steps__number-three,
+  .four-steps__number-four {
+    font-size: calc(64px + (32 + 32 * 0.7) * ((100vw - 320px) / 1920));
+  }
 }
 /* <!--  Проекты - Яна FİNİSH--> */
 /* Почему нас выбирают - Динара start */
@@ -501,9 +549,12 @@ header {
 .reviews__heading-text_black {
   color: #000000;
 }
+.reviews__block-photo {
+  display: flex;
+  align-items: center;
+}
 .reviews__photo {
   width: 100%;
-  height: 100%;
 }
 .reviews__wrap {
   display: grid;
@@ -513,7 +564,7 @@ header {
 }
 .reviews__photo {
   grid-area: reviews__photo;
-  width: 100%;
+  max-width: 100%;
 }
 .reviews__inner {
   grid-area: reviews__inner;
@@ -587,8 +638,7 @@ header {
 .questions__text_none {
   display: none;
 }
-.questions__block-form,
-.instruction-mobile {
+.questions__block-form {
   background: #dde3e1;
   margin-left: 10%;
   display: flex;
@@ -645,8 +695,7 @@ header {
   color: #545a2f;
 }
 .instruction-mobile__button,
-.questions__button,
-.application__button {
+.questions__button {
   background: #545a2f;
   border: none;
   font-family: "Noah";
@@ -661,29 +710,31 @@ header {
 
 .application__container {
   display: grid;
-  max-width: 65%;
+  max-width: 70%;
   margin: 0 auto;
   grid-template-areas: "application__block-text application__vector-img1 application__button-container";
   align-items: center;
+  gap: 1%;
 }
 .application__block-text {
   grid-area: application__block-text;
+  max-width: 70%;
 }
 .application__title {
   font-family: "Noah";
   font-style: normal;
   font-weight: 700;
   font-size: calc(24px + 46 * (100vw / 1920));
-  line-height: 87px;
+  line-height: 50px;
   color: #1a1a18;
 }
 .application__text {
   text-align: left;
 }
 .application__vector-img1 {
-  width: 80%;
   grid-area: application__vector-img1;
   padding-top: 40%;
+  max-width: 100px;
 }
 .application__vector-img2 {
   display: none;
@@ -691,19 +742,20 @@ header {
 }
 .application__button-container {
   grid-area: application__button-container;
-  width: 311px;
-  height: 60px;
 }
-.application__button-up {
+.application__button {
+  width: 100%;
+}
+/* .application__button-up {
   position: fixed;
   bottom: 28px;
-  right: 28px;
+  right: 2%;
   z-index: 9;
 }
 .application__button-img {
   height: 80px;
   width: 80px;
-}
+} */
 
 /* Футер - Асият start */
 .footer {
@@ -792,9 +844,48 @@ header {
 }
 /* Футер - Асият end */
 
+@media screen and (max-width: 767px) {
+  .instruction__block-form,
+  .instruction__box-img {
+    height: 20vh;
+  }
+  .instruction__checkbox-text,
+  .instruction__button {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .values__text,
+  .reviews__text,
+  .reviews__topic,
+  .questions__instruction-text,
+  .questions__text {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 300;
+    font-size: calc(20px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
+    line-height: 24px;
+    color: #1a1a18;
+  }
+  .values__heading-text,
+  .reviews__heading-text,
+  .questions__heading-text,
+  .instruction__caption-text {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 300;
+    font-size: calc(40px + (18 + 18 * 0.7) * ((100vw - 320px) / 1920));
+    line-height: 50px;
+    text-align: center;
+    color: #1a1a18;
+  }
+}
 @media screen and (min-width: 321px) {
   .instruction-mobile {
     display: none;
+  }
+  .instruction__checkbox-text,
+  .instruction__button {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -817,7 +908,7 @@ header {
   .header__link-img {
     max-width: 50%;
   }
- 
+
   .header__company-name {
     margin-top: 10%;
     margin-left: 1%;
@@ -851,7 +942,7 @@ header {
   }
 
   .reviews {
-    margin: 0;
+    margin: 8% 0 8% 0;
     max-width: 100%;
   }
 
@@ -981,7 +1072,7 @@ header {
   .footer__inner {
     display: flex;
     flex-direction: column;
-/*    display: grid;
+    /*    display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "footer__logo"
     "footer__contacts"
@@ -991,9 +1082,7 @@ header {
     align-items: center;
     justify-content: center; */
   }
-
 }
-
 
 .footer__inner {
   display: grid;
@@ -1070,4 +1159,3 @@ header {
   text-decoration: none;
 }
 /* Футер - Асият end */
-

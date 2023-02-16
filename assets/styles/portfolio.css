@@ -8,6 +8,10 @@
   display: flex;
   flex-direction: column;
 }
+.portfolio__block-text {
+}
+.portfolio__caption {
+}
 .portfolio__block-img {
   display: grid;
   grid-template-areas:

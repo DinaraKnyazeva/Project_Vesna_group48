@@ -113,6 +113,10 @@ header {
 }
 /* Яна хедер финиш */
 /* Основной текст - Асият start */
+.description {
+  position: relative;
+}
+
 .description__heading {
   font-family: "Noah";
   font-style: normal;
@@ -134,6 +138,20 @@ header {
   margin-left: 29%;
   margin-right: 29%;
   margin-top: 53px;
+}
+
+.description__branch-left {
+  position: absolute;
+  left: 0%;
+  bottom: 45%;
+  width: 26.6%;
+}
+
+.description__branch-right {
+  position: absolute;
+  right: 0%;
+  bottom: 46.8%;
+  width: 24.3%;
 }
 
 .description__gallery {

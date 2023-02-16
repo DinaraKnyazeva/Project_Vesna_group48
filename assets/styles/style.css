@@ -113,7 +113,7 @@ header {
 }
 /* Яна хедер финиш */
 /* Основной текст - Асият start */
-.description_heading {
+.description__heading {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -123,7 +123,7 @@ header {
   color: #1a1a18;
 }
 
-.description_content {
+.description__content {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -136,15 +136,19 @@ header {
   margin-top: 53px;
 }
 
-.portfolio {
+.description__gallery {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-left: 3%;
   margin-right: 3%;
   margin-top: 196px;
   margin-bottom: 196px;
 }
+
+.description__photo{
+  width: 32%;
+}
+
 /* Основной текст - Асият finish */
 
 /* Что мы делаем? - Асият start */
@@ -955,7 +959,7 @@ header {
   .footer__inner {
     display: flex;
     flex-direction: column;
- /*    display: grid;
+/*    display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "footer__logo"
     "footer__contacts"
@@ -968,4 +972,80 @@ header {
 
 }
 
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-content: center;
+}
+
+.tel {
+  margin-top: 61px;
+  margin-bottom: 22px;
+}
+
+.mail {
+  margin-bottom: 48px;
+}
+
+.footer__contacts a {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 61px;
+  margin-bottom: 22px;
+}
+
+.footer__copyright {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.footer__logo,
+.socials,
+.policy {
+  display: flex;
+}
+
+.footer__logo {
+  justify-content: center;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.socials {
+  margin-top: 38px;
+  margin-bottom: 98px;
+}
+
+.policy {
+  margin-bottom: 20px;
+}
+
+.socials,
+.policy {
+  justify-content: end;
+}
+
+.policy__link {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* Футер - Асият end */
 

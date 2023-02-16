@@ -53,7 +53,7 @@
                 <img class="header__branch" src="assets/images/main/header_branch.png" alt="branch">
               </div>
             </div>
-            <div class="row">
+            <div class="header__link row">
               <div class="col d-flex flex-row justify-content-evenly px-0">
                 <a href="ссылка на другие проекты">
                   <img class="header__link-img" src="assets/images/main/header_project.png" alt="link_to_projects">
@@ -74,12 +74,12 @@
     <main>
       <!-- Основной текст - Асият start -->
       <div class="description">
-        <p class="description_heading">
+        <p class="description__heading">
           Создаем не просто красивый сад с картинки, <br /><b
             >а место, куда захочется возвращаться</b
           >
         </p>
-        <p class="description_content">
+        <p class="description__content">
           От проекта до ухода за садом – один подрядчик. <br />Мы несем
           ответственность за все этапы работ. Ваш сад будет органичен и выполнен
           в одном стиле. Мы делаем участок <br />практичным, безопасным и
@@ -89,10 +89,12 @@
           ошибки до начала строительных работ и предотвращаются непредвиденные
           расходы.
         </p>
-        <div class="portfolio">
-          <img class="portfolio_image" src="assets/images/main/portfolio1.png" alt="Examples from portfolio">
-          <img class="portfolio_image" src="assets/images/main/portfolio2.png" alt="Examples from portfolio">
-          <img class="portfolio_image" src="assets/images/main/portfolio3.png" alt="Examples from portfolio">
+        <img class="description__branch-left" src="assets/images/main/branch-left.png" alt="Branch in the background">
+        <img class="description__branch-right" src="assets/images/main/branch-right.png" alt="Branch in the background">
+        <div class="description__gallery">
+          <img class="description__photo" src="assets/images/main/portfolio1.png" alt="Examples of work">
+          <img class="description__photo" src="assets/images/main/portfolio2.png" alt="Examples of work">
+          <img class="description__photo" src="assets/images/main/portfolio3.png" alt="Examples of work">
         </div>
       </div>
       <!-- Основной текст - Асият finish -->
@@ -100,7 +102,7 @@
       <!-- Что мы делаем? - Асият start -->
       <!-- Что мы делаем? - Асият finish -->
 
-      <!-- Как выбрать растения - Алена start-->
+      <!-- Как выбрать растения - Динара start-->
       <div class="instruction">
         <div class="instruction__box">
         </div>
@@ -144,16 +146,12 @@
       </div>
       <input class="instruction-mobile__button" type="button" value="Хочу инструкцию">
     </div>
-      <!-- Как выбрать растения - Алена finish-->
+      <!-- Как выбрать растения - Динара finish-->
 
       <!--  Проекты - Яна start-->
       <div class="projects">
         <p class="projects__title">Наши проекты</p>
-        <div class="projects__container"> 
-          <button class="projects__button">
-            <a href="здесь ссылка на другие проекты" class="projects__link">Все проекты</a>
-            <img class="projects__arrow-button" src="assets/images/main/icon_button_arrow.png" alt="arrow">
-          </button> 
+        <div class="projects__container">          
           <div>        
             <img class="projects__img-one" src="assets/images/main/Projects1.png" alt="our_projects">
           </div>  
@@ -165,7 +163,11 @@
           </div>
           <div>
             <img class="projects__img-four" src="assets/images/main/Projects4.png" alt="our_projects">
-          </div>          
+          </div>  
+          <button class="projects__button">
+            <a href="здесь ссылка на другие проекты" class="projects__link">Все проекты</a>
+            <img class="projects__arrow-button" src="assets/images/main/icon_button_arrow.png" alt="arrow">
+          </button>         
         </div>
       </div>
       <div class="four-steps">
@@ -174,36 +176,50 @@
           <p class="four-steps__title-dream">вашей мечты</p> 
         </div>      
         <div class="four-steps__container row">
-          <div class="col-6">
+          <div class="four-steps__description-one col-6">
             <div class="row my-5">
-              <!-- <img src="assets/images/main/01.png" alt="one"> -->
-              <p class="four-steps__description">Расскажите нам, что вы хотите увидеть 
-              на своем участке</p>  
-              <p>Побеседуйте с нашим специалистом. Он приедет к вам в любое удобное время.</p>
+              <div class="col-2">
+                <p class="four-steps__number-one">01</p>
+              </div>
+              <div class="col-10">
+                <p class="four-steps__bold-text">Расскажите нам, что вы хотите увидеть на своем участке</p>  
+                <p class="four-steps__text">Побеседуйте с нашим специалистом. Он приедет к вам в любое удобное время.</p>
+              </div>
             </div>
             <div class="row">
-              <!-- <img class="four-steps__icon" src="assets/images/main/03.png" alt="three"> -->
-              <p class="four-steps__description">Дождитесь окончания ландшафтных работ</p>
-              <p>Вы получите идеальный участок с хорошим дренажом, мощеными дорожками и площадками, высаженными растениями — деревьями, кустарниками, цветами 
+              <div class="col-2">
+                <p class="four-steps__number-three">03</p>
+              </div>  
+              <div class="col-10">
+                <p class="four-steps__bold-text">Дождитесь окончания ландшафтных работ</p>
+                <p class="four-steps__text">Вы получите идеальный участок с хорошим дренажом, мощеными дорожками и площадками, высаженными растениями — деревьями, кустарниками, цветами 
                 и газоном.</p> 
               </div>  
+              </div>  
           </div> 
-          <div class="col-6">
+          <div class="four-steps__description-two col-5">
             <div class="row my-5">
-              <!-- <img class="four-steps__icon" src="assets/images/main/02.png" alt="two"> -->
-              <p class="four-steps__description">Оцените проект, который разработают наши специалисты, и внесите изменения</p>
-              <p>Архитектор разработает проект ландшафтного дизайна и сделает 3D-визуализацию.</p>
+              <div class="col-2">
+                <p class="four-steps__number-two">02</p>
+              </div>  
+              <div class="col-10">
+                <p class="four-steps__bold-text">Оцените проект, который разработают наши специалисты, и внесите изменения</p>
+                <p class="four-steps__text">Архитектор разработает проект ландшафтного дизайна и сделает 3D-визуализацию.</p>
+              </div> 
             </div>
             <div class="row">
-              <!-- <img class="four-steps__icon" src="assets/images/main/04.png" alt="four"> -->
-              <p class="four-steps__description">Делегируйте уход за участком профессионалам</p>
-              <p>При необходимости мы будем приезжать регулярно и следить за состоянием участка.</p>
+              <div class="col-2">
+                <p class="four-steps__number-four">04</p>
+              </div>  
+              <div class="col-10">
+                <p class="four-steps__bold-text">Делегируйте уход за участком профессионалам</p>
+                <p class="four-steps__text">При необходимости мы будем приезжать регулярно и следить за состоянием участка.</p>
+            </div>
             </div>
           </div>
         </div>
       </div>
       <!--  Проекты - Яна FİNİSH-->
-
       <!-- Почему нас выбирают - Динара start-->
       <div class="values">
         <div class="values__container">
@@ -353,27 +369,27 @@
     <!-- Асият -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-inner">
-          <div class="footer-col">
-            <div class="footer-contacts">
+        <div class="footer__inner">
+          <div class="footer__col">
+            <div class="footer__contacts">
               <p class="tel"><a href="tel:+7(921)888-88-88">+7(921) 888 88 88</a></p>
               <p class="mail"><a href="mailto:info@vesna.ru">info@vesna.ru</a></p>
             </div>
-            <div class="footer-copyright">
+            <div class="footer__copyright">
               &#169 2021 VESNA
             </div>
           </div>
-          <div class="footer-col">
-            <div class="footer-logo">
+          <div class="footer__col">
+            <div class="footer__logo">
               <img src="assets/images/main/footer-logo.svg" alt="Vesna logo"></img>
             </div>
           </div>
-          <div class="footer-col">
+          <div class="footer__col">
             <div class="socials">
               <a href="#"><img src="assets/images/main/instagram.svg" alt="Instagram link"></img></a>
             </div>
             <div class="policy">
-            <a href="#" class="policy-link">Политика конфиденциальности</a>
+            <a href="#" class="policy__link">Политика конфиденциальности</a>
             </div>
           </div>
         </div>

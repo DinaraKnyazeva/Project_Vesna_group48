@@ -167,6 +167,31 @@ header {
   width: 32%;
 }
 
+.advantages__heading {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59.95px;
+  text-align: center;
+  color: #1a1a18;
+}
+
+.advantages li {
+  margin: 0;
+	padding: 36px 0 36px 84px;
+	list-style: none;
+	background-image: url(../images/main/advantage-check.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 2.8%;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29.98px;
+}
+
 /* Основной текст - Асият finish */
 
 /* Что мы делаем? - Асият start */

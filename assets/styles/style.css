@@ -445,7 +445,7 @@ header {
       "projects__img-four"
       "projects__button";
   }
-  
+
   .four-steps {
     margin-left: 0%;
     margin-right: 0%;
@@ -1094,78 +1094,3 @@ header {
   }
 }
 
-.footer__inner {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  align-content: center;
-}
-
-.tel {
-  margin-top: 61px;
-  margin-bottom: 22px;
-}
-
-.mail {
-  margin-bottom: 48px;
-}
-
-.footer__contacts a {
-  font-family: "Geometria";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 1px;
-  color: #ffffff;
-  text-decoration: none;
-  margin-top: 61px;
-  margin-bottom: 22px;
-}
-
-.footer__copyright {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  opacity: 0.7;
-  margin-bottom: 20px;
-}
-
-.footer__logo,
-.socials,
-.policy {
-  display: flex;
-}
-
-.footer__logo {
-  justify-content: center;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-
-.socials {
-  margin-top: 38px;
-  margin-bottom: 98px;
-}
-
-.policy {
-  margin-bottom: 20px;
-}
-
-.socials,
-.policy {
-  justify-content: end;
-}
-
-.policy__link {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  text-decoration: none;
-}
-/* Футер - Асият end */

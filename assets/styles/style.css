@@ -107,43 +107,6 @@ header {
 .header_link-icon {
   max-width: 100%;
 }
-
-@media screen and (max-width: 320px) {
-  header {
-    margin: 0;
-    max-width: 100%;
-  }
-
-  .header__menu-wrapper,
-  .header_link-icon {
-    display: none;
-  }
-
-  .header__branch {
-    position: absolute;
-    max-width: 50%;
-  }
-  .header__link-img {
-    max-width: 50%;
-  }
-
-  .header__company-name {
-    margin-top: 10%;
-    margin-left: 1%;
-    font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
-    margin-left: 1%;
-  }
-
-  .header__title {
-    font-size: calc(24px + (46 + 46 * 0.7) * ((100vw - 320px) / 1920));
-    margin-left: 1%;
-  }
-
-  .header__moto {
-    font-size: calc(18px + (30 + 30 * 0.7) * ((100vw - 320px) / 1920));
-    margin-left: 1%;
-  }
-}
 /* Яна хедер финиш */
 /* Основной текст - Асият start */
 .description_heading {
@@ -182,10 +145,8 @@ header {
 
 /* Что мы делаем? - Асият start */
 /* Что мы делаем? - Асият finish */
-/* Алена старт */
-/* 
 
-/* Как выбрать растения - Алена start */
+/* Как выбрать растения - Динара start */
 .instruction {
   display: grid;
   grid-template-areas:
@@ -241,7 +202,7 @@ header {
 .instruction-mobile {
   display: none;
 }
-/* Как выбрать растения - Алена finish */
+/* Как выбрать растения - Динара finish */
 
 /* <!--  Проекты - Яна start--> */
 .projects {
@@ -330,6 +291,7 @@ header {
   color: white;
 }
 
+
 .four-steps {
   margin: 10% 10% 10% 10%;
 }
@@ -354,6 +316,55 @@ header {
 
 .four-steps__icon {
   max-width: 25%;
+}
+
+
+@media screen and (max-width: 320px) {
+  .projects,
+  .projects__container {
+    margin: 0;
+  }
+
+  .projects {
+    margin-top: 10%;
+    max-width: 100%;
+  }
+
+  .projects__button {
+    margin-bottom: 10%;
+    width: 320px;
+    position: initial;
+    border-radius: 0%;
+    background-color: #545a2f;
+  }
+
+  .projects__link {
+    color: white;
+  }
+  
+  .projects__arrow-button {
+    display: none;
+  }
+
+  .projects__title {
+    margin: 0;
+    font-size: calc(24px + (34 + 34 * 0.7) * ((100vw - 320px) / 1920));
+  }
+
+  .projects__container {
+    display: grid;
+    grid-template-areas: "projects__img-one"
+    "projects__img-two"
+    "projects__img-three"
+    "projects__img-four"
+    "projects__button";
+  }
+
+  .four-steps__title,
+  .four-steps__title-dream {
+    font-size: calc(24px + (34 + 34 * 0.7) * ((100vw - 320px) / 1920));
+    line-height: 29.98px;
+  }
 }
 /* <!--  Проекты - Яна FİNİSH--> */
 
@@ -646,6 +657,46 @@ header {
   }
 }
 @media screen and (max-width: 320px) {
+  header {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .header__menu-wrapper,
+  .header_link-icon,
+  .header__link-wrapper {
+    display: none;
+  }
+
+  .header__branch {
+    position: absolute;
+    max-width: 50%;
+  }
+
+  .header__link-img {
+    max-width: 50%;
+  }
+ 
+  .header__company-name {
+    margin-top: 10%;
+    margin-left: 1%;
+    font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
+    margin-left: 1%;
+    line-height: 20px;
+  }
+
+  .header__title {
+    font-size: calc(24px + (46 + 46 * 0.7) * ((100vw - 320px) / 1920));
+    margin-left: 1%;
+    line-height: 30px;
+  }
+
+  .header__moto {
+    font-size: calc(18px + (30 + 30 * 0.7) * ((100vw - 320px) / 1920));
+    margin-left: 1%;
+    line-height: 22px;
+  }
+
   .instruction {
     display: none;
   }
@@ -710,6 +761,7 @@ header {
     height: 35%;
     margin-right: 10px;
   }
+
   .reviews__wrap {
     display: grid;
     grid-template-areas:

@@ -8,6 +8,10 @@
   src: url(../fonts/geometria_light.otf);
 }
 
+@font-face {
+  font-family: "MarckScript-Regular";
+  src: url(../fonts/MarckScript-Regular.ttf);
+}
 /* Яна хедер старт */
 header {
   margin-bottom: 12%;
@@ -301,23 +305,39 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: calc(24px + 34 * (100vw / 1920));
-  line-height: 72px;
   text-align: center;
   color: #333333;
 }
 
-.four-steps__title-dream {
+.four-steps__description-two{
+  margin-left: 2%;
+}
+
+.four-steps__title-dream,
+.four-steps__bold-text {
   font-weight: bolder;
 }
 
-.four-steps__description {
-  font-weight: bolder;
+.four-steps__bold-text,
+.four-steps__text {
+  font-family: 'Noah';
+  font-style: normal;
+  font-size: calc(16px + 12 * (100vw / 1920));;
+  line-height: 35px;
+  color: #000000; 
 }
 
-.four-steps__icon {
-  max-width: 25%;
+.four-steps__number-one,
+.four-steps__number-two,
+.four-steps__number-three,
+.four-steps__number-four {
+  font-family: 'MarckScript-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(64px + 32 * (100vw / 1920));
+  line-height: 120px;
+  color: #545A2F;
 }
-
 
 @media screen and (max-width: 320px) {
   .projects,

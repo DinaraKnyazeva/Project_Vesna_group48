@@ -178,13 +178,14 @@ header {
 }
 
 .advantages li {
+  width: 35%;
   margin: 0;
 	padding: 36px 0 36px 84px;
 	list-style: none;
 	background-image: url(../images/main/advantage-check.svg);
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: 2.8%;
+	background-size: 8.2%;
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;

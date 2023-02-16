@@ -229,7 +229,6 @@ header {
   display: none;
 }
 /* Как выбрать растения - Динара finish */
-
 /* <!--  Проекты - Яна start--> */
 .projects {
   max-width: 90%;
@@ -344,7 +343,6 @@ header {
   font-family: "Noah";
   font-style: normal;
   font-size: calc(16px + 12 * (100vw / 1920));
-  line-height: 35px;
   color: #000000;
 }
 
@@ -356,7 +354,6 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: calc(64px + 32 * (100vw / 1920));
-  line-height: 120px;
   color: #545a2f;
 }
 
@@ -407,9 +404,20 @@ header {
     font-size: calc(24px + (34 + 34 * 0.7) * ((100vw - 320px) / 1920));
     line-height: 29.98px;
   }
+
+  .four-steps__bold-text,
+  .four-steps__text {
+    font-size: calc(16px + (12 + 12 * 0.7) * ((100vw - 320px) / 1920));
+  }
+
+  .four-steps__number-one,
+  .four-steps__number-two,
+  .four-steps__number-three,
+  .four-steps__number-four {
+    font-size: calc(64px + (32 + 32 * 0.7) * ((100vw - 320px) / 1920));
+  }
 }
 /* <!--  Проекты - Яна FİNİSH--> */
-
 /* Почему нас выбирают - Динара start */
 .values {
   background-color: #dde3e1;
@@ -693,6 +701,93 @@ header {
   width: 80px;
 }
 
+/* Футер - Асият start */
+.footer {
+  background-color: #555934;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.footer .container {
+  padding: 0;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-content: center;
+}
+
+.footer__tel {
+  margin-top: 61px;
+  margin-bottom: 22px;
+}
+
+.footer__mail {
+  margin-bottom: 48px;
+}
+
+.footer__contacts a {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 61px;
+  margin-bottom: 22px;
+}
+
+.footer__copyright {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.footer__logo,
+.footer__socials,
+.footer__policy {
+  display: flex;
+}
+
+.footer__logo {
+  justify-content: center;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.footer__socials {
+  margin-top: 38px;
+  margin-bottom: 98px;
+}
+
+.footer__policy {
+  margin-bottom: 20px;
+}
+
+.footer__socials,
+.footer__policy {
+  justify-content: end;
+}
+
+.footer__policy-link {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* Футер - Асият end */
+
 @media screen and (min-width: 321px) {
   .instruction-mobile {
     display: none;
@@ -742,6 +837,7 @@ header {
   .instruction {
     display: none;
   }
+
   .instruction-mobile {
     background: #dde3e1;
     display: flex;
@@ -749,6 +845,7 @@ header {
     align-items: center;
     padding: 3%;
   }
+
   .reviews {
     margin: 0;
     max-width: 100%;
@@ -876,19 +973,20 @@ header {
   .application__vector-img1 {
     display: none;
   }
-}
-/* Часто зад. вопросы - Динара end */
 
-/* Футер - Асият start */
-
-.footer {
-  background-color: #555934;
-  width: 100%;
-  margin-top: 5%;
-}
-
-.footer .container {
-  padding: 0;
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+    /*    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "footer__logo"
+    "footer__contacts"
+    "footer__socials"
+    "footer__policy"
+    "footer__copyright";
+    align-items: center;
+    justify-content: center; */
+  }
 }
 
 .footer__inner {

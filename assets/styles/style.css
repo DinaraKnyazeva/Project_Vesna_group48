@@ -12,6 +12,7 @@
   font-family: "MarckScript-Regular";
   src: url(../fonts/MarckScript-Regular.ttf);
 }
+
 /* Яна хедер старт */
 header {
   margin-bottom: 12%;
@@ -364,6 +365,7 @@ header {
   color: white;
 }
 
+
 .four-steps {
   margin: 10% 10% 10% 10%;
 }
@@ -375,10 +377,6 @@ header {
   font-size: calc(24px + 34 * (100vw / 1920));
   text-align: center;
   color: #333333;
-}
-
-.four-steps__description-two {
-  margin-left: 2%;
 }
 
 .four-steps__title-dream,
@@ -1080,9 +1078,9 @@ header {
   }
 
   .footer__inner {
-    display: flex;
-    flex-direction: column;
-    /*    display: grid;
+    /* display: flex;
+    flex-direction: column; */
+       display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "footer__logo"
     "footer__contacts"
@@ -1090,7 +1088,7 @@ header {
     "footer__policy"
     "footer__copyright";
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
   }
 }
 

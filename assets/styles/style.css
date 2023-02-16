@@ -386,6 +386,10 @@ header {
   font-weight: bolder;
 }
 
+.four-steps__bold-text {
+  margin: 0%;
+}
+
 .four-steps__bold-text,
 .four-steps__text {
   font-family: "Noah";
@@ -406,11 +410,6 @@ header {
 }
 
 @media screen and (max-width: 320px) {
-  .projects,
-  .projects__container {
-    margin: 0;
-  }
-
   .projects {
     margin-top: 10%;
     max-width: 100%;
@@ -446,9 +445,17 @@ header {
       "projects__img-four"
       "projects__button";
   }
-
-  .four-steps__container-fluid {
+  .four-steps {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .four-steps__container-fluid,
+  .four-steps__steps {
     flex-direction: column;
+  }
+
+  .four-steps__steps {
+    align-items: center;
   }
 
   .four-steps__title,
@@ -460,6 +467,7 @@ header {
   .four-steps__bold-text,
   .four-steps__text {
     font-size: calc(16px + (12 + 12 * 0.7) * ((100vw - 320px) / 1920));
+    margin: 0%;
   }
 
   .four-steps__number-one,
@@ -467,6 +475,7 @@ header {
   .four-steps__number-three,
   .four-steps__number-four {
     font-size: calc(64px + (32 + 32 * 0.7) * ((100vw - 320px) / 1920));
+    margin: 0%;
   }
 }
 /* <!--  Проекты - Яна FİNİSH--> */

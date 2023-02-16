@@ -363,6 +363,7 @@ header {
   color: white;
 }
 
+
 .four-steps {
   margin: 10% 10% 10% 10%;
 }
@@ -376,13 +377,13 @@ header {
   color: #333333;
 }
 
-.four-steps__description-two {
-  margin-left: 2%;
-}
-
 .four-steps__title-dream,
 .four-steps__bold-text {
   font-weight: bolder;
+}
+
+.four-steps__bold-text {
+  margin: 0%;
 }
 
 .four-steps__bold-text,
@@ -405,11 +406,6 @@ header {
 }
 
 @media screen and (max-width: 320px) {
-  .projects,
-  .projects__container {
-    margin: 0;
-  }
-
   .projects {
     margin-top: 10%;
     max-width: 100%;
@@ -446,6 +442,19 @@ header {
       "projects__button";
   }
 
+  .four-steps {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .four-steps__container-fluid,
+  .four-steps__steps {
+    flex-direction: column;
+  }
+
+  .four-steps__steps {
+    align-items: center;
+  }
+
   .four-steps__title,
   .four-steps__title-dream {
     font-size: calc(24px + (34 + 34 * 0.7) * ((100vw - 320px) / 1920));
@@ -455,6 +464,7 @@ header {
   .four-steps__bold-text,
   .four-steps__text {
     font-size: calc(16px + (12 + 12 * 0.7) * ((100vw - 320px) / 1920));
+    margin: 0%;
   }
 
   .four-steps__number-one,
@@ -462,6 +472,7 @@ header {
   .four-steps__number-three,
   .four-steps__number-four {
     font-size: calc(64px + (32 + 32 * 0.7) * ((100vw - 320px) / 1920));
+    margin: 0%;
   }
 }
 /* <!--  Проекты - Яна FİNİSH--> */
@@ -809,8 +820,8 @@ header {
 }
 
 .footer__socials {
-  margin-top: 38px;
-  margin-bottom: 98px;
+  margin-top: 7%;
+  margin-bottom: 20%;
 }
 
 .footer__policy {
@@ -1077,92 +1088,43 @@ header {
   }
 
   .footer__inner {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    /*    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "footer__logo"
-    "footer__contacts"
-    "footer__socials"
-    "footer__policy"
-    "footer__copyright";
     align-items: center;
-    justify-content: center; */
   }
-}
 
-.footer__inner {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  align-content: center;
-}
+  .footer__copyright{
+    display: none;
+  }
 
-.tel {
-  margin-top: 61px;
-  margin-bottom: 22px;
-}
+  .footer__col_one { 
+    flex:1;        
+    order: 2; 
+  }
+  
+  .footer__col_two { 
+    order: 1; 
+  }
 
-.mail {
-  margin-bottom: 48px;
-}
+  .footer__col_three { 
+    order: 3; 
+  }
 
-.footer__contacts a {
-  font-family: "Geometria";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 1px;
-  color: #ffffff;
-  text-decoration: none;
-  margin-top: 61px;
-  margin-bottom: 22px;
-}
-
-.footer__copyright {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  opacity: 0.7;
-  margin-bottom: 20px;
-}
-
-.footer__logo,
-.socials,
-.policy {
-  display: flex;
-}
-
-.footer__logo {
+  .footer__col_one:last-child {
+    order: 4;
+  }
+ .footer__mail {
+  margin-bottom: 2%;
+ }
+  .footer__socials {
   justify-content: center;
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-top: 3%;
 }
 
-.socials {
-  margin-top: 38px;
-  margin-bottom: 98px;
+.footer__policy {
+  justify-self: flex-start;
+  margin: 0;
+}
 }
 
-.policy {
-  margin-bottom: 20px;
-}
-
-.socials,
-.policy {
-  justify-content: end;
-}
-
-.policy__link {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  text-decoration: none;
-}
-/* Футер - Асият end */

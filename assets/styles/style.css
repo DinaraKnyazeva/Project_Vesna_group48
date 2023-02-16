@@ -201,6 +201,11 @@ header {
   background: #dde3e1;
   height: 30vh;
 }
+.instruction__inner-form {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 25% 15% 30% 30%;
+}
 .instruction__box-img {
   grid-area: instruction__box-img;
   background: #dde3e1;
@@ -209,8 +214,9 @@ header {
   align-items: center;
 }
 .instruction__img {
-  margin-left: 10%;
-  height: 60vh;
+  margin-left: 15%;
+  height: 200%;
+  max-width: 75%;
 }
 .instruction__button {
   background: #545a2f;
@@ -223,7 +229,7 @@ header {
   text-align: center;
   color: #ffffff;
   width: 40%;
-  height: 15%;
+  height: 50%;
 }
 .instruction-mobile {
   display: none;
@@ -497,9 +503,12 @@ header {
 .reviews__heading-text_black {
   color: #000000;
 }
+.reviews__block-photo {
+  display: flex;
+  align-items: center;
+}
 .reviews__photo {
   width: 100%;
-  height: 100%;
 }
 .reviews__wrap {
   display: grid;
@@ -509,7 +518,7 @@ header {
 }
 .reviews__photo {
   grid-area: reviews__photo;
-  width: 100%;
+  max-width: 100%;
 }
 .reviews__inner {
   grid-area: reviews__inner;
@@ -583,8 +592,7 @@ header {
 .questions__text_none {
   display: none;
 }
-.questions__block-form,
-.instruction-mobile {
+.questions__block-form {
   background: #dde3e1;
   margin-left: 10%;
   display: flex;
@@ -641,8 +649,7 @@ header {
   color: #545a2f;
 }
 .instruction-mobile__button,
-.questions__button,
-.application__button {
+.questions__button {
   background: #545a2f;
   border: none;
   font-family: "Noah";
@@ -657,29 +664,31 @@ header {
 
 .application__container {
   display: grid;
-  max-width: 65%;
+  max-width: 70%;
   margin: 0 auto;
   grid-template-areas: "application__block-text application__vector-img1 application__button-container";
   align-items: center;
+  gap: 1%;
 }
 .application__block-text {
   grid-area: application__block-text;
+  max-width: 70%;
 }
 .application__title {
   font-family: "Noah";
   font-style: normal;
   font-weight: 700;
   font-size: calc(24px + 46 * (100vw / 1920));
-  line-height: 87px;
+  line-height: 50px;
   color: #1a1a18;
 }
 .application__text {
   text-align: left;
 }
 .application__vector-img1 {
-  width: 80%;
   grid-area: application__vector-img1;
   padding-top: 40%;
+  max-width: 100px;
 }
 .application__vector-img2 {
   display: none;
@@ -687,19 +696,20 @@ header {
 }
 .application__button-container {
   grid-area: application__button-container;
-  width: 311px;
-  height: 60px;
 }
-.application__button-up {
+.application__button {
+  width: 100%;
+}
+/* .application__button-up {
   position: fixed;
   bottom: 28px;
-  right: 28px;
+  right: 2%;
   z-index: 9;
 }
 .application__button-img {
   height: 80px;
   width: 80px;
-}
+} */
 
 /* Футер - Асият start */
 .footer {
@@ -788,9 +798,48 @@ header {
 }
 /* Футер - Асият end */
 
+@media screen and (max-width: 767px) {
+  .instruction__block-form,
+  .instruction__box-img {
+    height: 20vh;
+  }
+  .instruction__checkbox-text,
+  .instruction__button {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .values__text,
+  .reviews__text,
+  .reviews__topic,
+  .questions__instruction-text,
+  .questions__text {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 300;
+    font-size: calc(20px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
+    line-height: 24px;
+    color: #1a1a18;
+  }
+  .values__heading-text,
+  .reviews__heading-text,
+  .questions__heading-text,
+  .instruction__caption-text {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 300;
+    font-size: calc(40px + (18 + 18 * 0.7) * ((100vw - 320px) / 1920));
+    line-height: 50px;
+    text-align: center;
+    color: #1a1a18;
+  }
+}
 @media screen and (min-width: 321px) {
   .instruction-mobile {
     display: none;
+  }
+  .instruction__checkbox-text,
+  .instruction__button {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -847,7 +896,7 @@ header {
   }
 
   .reviews {
-    margin: 0;
+    margin: 8% 0 8% 0;
     max-width: 100%;
   }
 

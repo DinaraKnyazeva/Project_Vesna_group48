@@ -399,6 +399,10 @@ header {
     "projects__button";
   }
 
+  .four-steps__container-fluid {
+    flex-direction: column;
+  }
+
   .four-steps__title,
   .four-steps__title-dream {
     font-size: calc(24px + (34 + 34 * 0.7) * ((100vw - 320px) / 1920));

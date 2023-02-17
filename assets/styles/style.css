@@ -168,6 +168,10 @@ header {
   width: 32%;
 }
 
+.advantages {
+  position: relative;
+}
+
 .advantages__heading {
   font-family: "Noah";
   font-style: normal;
@@ -179,8 +183,34 @@ header {
   margin-bottom: 0;
 }
 
+.advantages__image1 {
+  position: absolute;
+  z-index: 2;
+  width: 36.5%;
+  left: 4.5%;
+  top: 301px;
+}
+
+.advantages__image2 {
+  position: absolute;
+  z-index: 3;
+  width: 27.9%;
+  left: 17%;
+  top: 770px;
+}
+
+.advantages__garland {
+  position: absolute;
+  z-index: 1;
+  width: 46%;
+  top: 11.2%;
+  left: 25.6%;
+}
+
 .advantages li {
-  width: 30.3%;
+  position: relative;
+  z-index: 2;
+  width: 35%;
   margin: 0;
   padding-left: 4.7%;
   list-style: none;
@@ -208,6 +238,7 @@ header {
 .advantages li:last-child {
   margin-top: 161px;
   margin-left: 50.89%;
+  margin-bottom: 437px;
 }
 
 /* Основной текст - Асият finish */

@@ -448,6 +448,7 @@ figure {
   font-weight: 400;
   font-size: calc(64px + 32 * (100vw / 1920));
   color: #545a2f;
+  text-align: center;
 }
 
 /* <!--  Проекты - Яна FİNİSH--> */
@@ -743,7 +744,7 @@ figure {
 
 .footer__inner {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   align-content: center;
 }
 
@@ -822,6 +823,43 @@ figure {
 /* Футер - Асият end */
 
 @media screen and (min-width: 2500px) {
+  .header__logo{
+    width: 50%;
+  }
+
+  .header__menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .nav-link,
+  .menu__telephone {
+    font-size: 46px;
+  }
+
+  .menu__consult {
+    font-size: 36px;
+  }
+
+  .menu__telephone {
+    width: 600px;
+    height: 80px;
+    margin-top: 8%;
+  }
+
+  .header__link-img {
+    width: 150%;
+  }
+
+  .description__content,
+  .advantages__list-one,
+  .advantages__list-two,
+  .advantages__list-three {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
   .instruction-mobile {
     display: none;
   }
@@ -890,7 +928,59 @@ figure {
     font-size: 3em;
   }
 }
+
 @media screen and (max-width: 992px) {
+  .header__logo, 
+  .header__branch {
+    width: 40%;
+  }
+
+  .header__link-img,
+  .header_link-icon {
+    width: 75%;
+  }
+
+  .projects__container {
+    display: grid;
+    grid-template-areas:
+      "projects__img-one"
+      "projects__img-two"
+      "projects__img-three"
+      "projects__img-four"
+      "projects__button";
+  }
+
+  .projects__button {
+    margin-bottom: 10%;
+    width: 320px;
+    position: initial;
+    border-radius: 0%;
+    background-color: #545a2f;
+  }
+
+  .projects__link {
+    color: white;
+  }
+
+  .projects__arrow-button {
+    display: none;
+  }
+
+
+  .four-steps {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  
+  .four-steps__container-fluid,
+  .four-steps__steps {
+    flex-direction: column;
+  }
+
+  .four-steps__steps {
+    align-items: center;
+  }
+
   .instruction__block-form,
   .instruction__box-img {
     height: 35vh;
@@ -910,6 +1000,58 @@ figure {
   }
 }
 @media screen and (max-width: 767px) {
+
+  .header__logo {
+    width: 50%;
+  }
+
+  .header__menu-wrapper,
+  .header_link-icon,
+  .header__link-wrapper {
+    display: none;
+    }
+
+  .projects__container {
+    display: grid;
+    grid-template-areas:
+      "projects__img-one"
+      "projects__img-two"
+      "projects__img-three"
+      "projects__img-four"
+      "projects__button";
+  }
+
+  .projects__button {
+    margin-bottom: 10%;
+    width: 320px;
+    position: initial;
+    border-radius: 0%;
+    background-color: #545a2f;
+  }
+
+  .projects__link {
+    color: white;
+  }
+
+  .projects__arrow-button {
+    display: none;
+  }
+
+
+  .four-steps {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  
+  .four-steps__container-fluid,
+  .four-steps__steps {
+    flex-direction: column;
+  }
+
+  .four-steps__steps {
+    align-items: center;
+  }
+
   .instruction-mobile {
     display: none;
   }
@@ -1007,6 +1149,54 @@ figure {
   }
 }
 @media screen and (max-width: 576px) {
+
+  .header__menu-wrapper,
+  .header_link-icon,
+  .header__link-wrapper {
+    display: none;
+    }
+
+  .projects__container {
+    display: grid;
+    grid-template-areas:
+      "projects__img-one"
+      "projects__img-two"
+      "projects__img-three"
+      "projects__img-four"
+      "projects__button";
+  }
+
+  .projects__button {
+    margin-bottom: 10%;
+    width: 320px;
+    position: initial;
+    border-radius: 0%;
+    background-color: #545a2f;
+  }
+
+  .projects__link {
+    color: white;
+  }
+
+  .projects__arrow-button {
+    display: none;
+  }
+
+
+  .four-steps {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  
+  .four-steps__container-fluid,
+  .four-steps__steps {
+    flex-direction: column;
+  }
+
+  .four-steps__steps {
+    align-items: center;
+  }
+
   .instruction {
     display: none;
   }
@@ -1150,7 +1340,7 @@ figure {
   .advantages {
     margin-bottom: 10%;
   }
-  
+
   .projects {
     margin-top: 10%;
     max-width: 100%;
@@ -1191,6 +1381,7 @@ figure {
     margin-left: 0%;
     margin-right: 0%;
   }
+
   .four-steps__container-fluid,
   .four-steps__steps {
     flex-direction: column;

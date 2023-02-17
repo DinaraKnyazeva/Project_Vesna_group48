@@ -1104,9 +1104,11 @@ header {
   .footer__col_one:last-child {
     order: 4;
   }
- .footer__mail {
+
+  .footer__mail {
   margin-bottom: 2%;
- }
+  }
+
   .footer__socials {
   justify-content: center;
   margin-top: 3%;

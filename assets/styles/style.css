@@ -192,7 +192,7 @@ header {
 }
 
 .advantages figcaption {
-  font-family: 'Noah';
+  font-family: "Noah";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -285,7 +285,7 @@ header {
 .instruction__block-form {
   grid-area: instruction__block-form;
   background: #dde3e1;
-  height: 30vh;
+  height: 40vh;
 }
 .instruction__inner-form {
   height: 100%;
@@ -295,7 +295,7 @@ header {
 .instruction__box-img {
   grid-area: instruction__box-img;
   background: #dde3e1;
-  height: 30vh;
+  height: 40vh;
   display: flex;
   align-items: center;
 }
@@ -313,8 +313,8 @@ header {
   font-size: 0.8em;
   text-align: center;
   color: #ffffff;
-  width: 350px;
-  height: 80px;
+  width: 50%;
+  height: 20%;
 }
 .instruction-mobile {
   display: none;
@@ -601,9 +601,6 @@ header {
   display: flex;
   align-items: center;
 }
-.reviews__photo {
-  width: 100%;
-}
 .reviews__wrap {
   display: grid;
   grid-template-areas: "reviews__photo reviews__inner";
@@ -643,9 +640,9 @@ header {
 .questions {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  max-width: 75%;
+  max-width: 85%;
   margin: 0 auto;
-  padding: 3%;
+  padding: 5% 0 5% 0;
 }
 .questions__heading-wrapper {
   margin: 0 0 5% 0;
@@ -790,7 +787,7 @@ header {
   width: 100%;
   height: 40px;
 }
-/* .application__button-up {
+.application__button-up {
   position: fixed;
   bottom: 28px;
   right: 2%;
@@ -799,7 +796,7 @@ header {
 .application__button-img {
   height: 80px;
   width: 80px;
-} */
+}
 
 /* Футер - Асият start */
 .footer {
@@ -887,8 +884,17 @@ header {
   text-decoration: none;
 }
 /* Футер - Асият end */
+@media screen and (min-width: 2500px) {
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 320px) {
+}
 
 @media screen and (min-width: 2500px) {
+  .instruction-mobile {
+    display: none;
+  }
   .application__container {
     max-width: 30%;
     margin: 0 auto;
@@ -913,17 +919,54 @@ header {
     font-size: 3em;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .instruction__block-form,
   .instruction__box-img {
-    height: 20vh;
+    height: 35vh;
+    padding-left: 5%;
   }
   .instruction__checkbox-text,
   .instruction__button {
-    font-size: 10px;
+    font-size: 16px;
     line-height: 12px;
-    width: 250px;
-    height: 50px;
+    width: 60%;
+    height: 40px;
+  }
+  .instruction__img {
+    margin-left: 12%;
+    height: 200%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .instruction-mobile {
+    display: none;
+  }
+  .instruction__block-form,
+  .instruction__box-img {
+    height: 30vh;
+    padding-left: 5%;
+  }
+  .instruction__checkbox-text,
+  .instruction__button {
+    font-size: 16px;
+    line-height: 12px;
+    width: 70%;
+    height: 35px;
+  }
+  .instruction__img {
+    margin-left: 10%;
+    height: 200%;
+    max-width: 100%;
+  }
+  .reviews {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .questions {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 5% 0 5% 0;
   }
   .values__text,
   .reviews__text,
@@ -949,15 +992,56 @@ header {
     color: #1a1a18;
   }
 }
-@media screen and (min-width: 321px) {
-  .instruction-mobile {
+@media screen and (max-width: 576px) {
+  .instruction {
     display: none;
   }
-  /* .instruction__checkbox-text,
+  .instruction-mobile {
+    background: #dde3e1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 15% 5% 15%;
+  }
+  .instruction-mobile__button {
+    height: 30px;
+  }
+  .reviews {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .reviews__inner {
+    padding-left: 0;
+  }
+  .reviews__wrap {
+    display: grid;
+    grid-template-areas:
+      "reviews__inner"
+      "reviews__photo";
+  }
+  .reviews__text {
+    margin-bottom: 5%;
+  }
+  .reviews__arrow-icon {
+    display: none;
+  }
+  .questions__block-form {
+    display: none;
+  }
+  .questions {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 3%;
+  }
+}
+/* @media screen and (min-width: 321px) {
+  .instruction__checkbox-text,
   .instruction__button {
     font-size: 10px;
-  } */
-}
+  }
+} */
 @media screen and (max-width: 320px) {
   header {
     margin: 0;

@@ -22,7 +22,7 @@
                       <img class="header__logo" src="assets/images/main/logo.png" alt="logo">
                     </div>
                     <div class="header__menu-wrapper col-9">
-                      <ul class="header__menu nav nav-fill d-flex justify-content-end align-items-center">
+                      <ul class="header__menu nav nav-fill d-flex justify-content-evenly align-items-center">
                         <li class="nav-item">
                           <a class="nav-link text-white" href="#">Главная</a>
                         </li>
@@ -93,17 +93,19 @@
         <p class="advantages__heading">
           <b>Доверьте свой участок профессионалам -</b><br> пусть они позаботятся о ландшафтном дизайне<br> и благоустройстве
         </p>
-        <figure>
-          <figcaption>Пример 3D-визуализации</figcaption>
-          <img class="advantages__image1" src="assets/images/main/3d-visual1.png" alt="Examples of 3D-visualisation">
-        </figure>
-        <img class="advantages__image2" src="assets/images/main/3d-visual2.png" alt="Examples of 3D-visualisation">
-        <img class="advantages__garland" src="assets/images/main/garland.svg" alt="Garland in the background">
-        <ul>
-          <li>Вы оцените будущий ландшафт с помощью 3D-визуализации и, если это требуется, внесете изменения.</li>
-          <li>Вам не придется контролировать качество нашей работы: отдыхайте и занимайтесь своими делами, пока специалисты технадзора следят за процессом.</li>
-          <li>Вы подарите себе красивый и ухоженный сад, переложите заботы по уходу на наши плечи и получите гарантию на все работы.</li>
-        </ul>
+        <div class="advantages__wrapper">
+          <figure>
+            <figcaption>Пример 3D-визуализации</figcaption>
+            <img class="advantages__image1" src="assets/images/main/3d-visual1.png" alt="Examples of 3D-visualisation">
+          </figure>
+          <img class="advantages__image2" src="assets/images/main/3d-visual2.png" alt="Examples of 3D-visualisation">
+          <img class="advantages__garland" src="assets/images/main/garland.svg" alt="Garland in the background">
+          <ul class="advantages__menu">
+            <li class="advantages__list-one">Вы оцените будущий ландшафт с помощью 3D-визуализации и, если это требуется, внесете изменения.</li>
+            <li class="advantages__list-two">Вам не придется контролировать качество нашей работы: отдыхайте и занимайтесь своими делами, пока специалисты технадзора следят за процессом.</li>
+            <li class="advantages__list-three">Вы подарите себе красивый и ухоженный сад, переложите заботы по уходу на наши плечи и получите гарантию на все работы.</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Основной текст - Асият finish -->
@@ -294,7 +296,7 @@
           <p class="reviews__heading-text reviews__heading-text_black">Отзывы о нас</p>
         </div>
         <div class="reviews__wrap">
-          <div class="reviews__block-photo">
+          <div>
             <img class="reviews__photo" src="assets/images/main/reviewsPhoto.jpg" alt="garden" />
           </div>
           <div class="reviews__inner">

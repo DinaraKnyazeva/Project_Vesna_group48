@@ -752,6 +752,11 @@ figure {
   margin-bottom: 22px;
 }
 
+.footer__tel-link,
+.footer__mail-link {
+  color: white;
+}
+
 .footer__mail {
   margin-bottom: 48px;
 }
@@ -1077,6 +1082,7 @@ figure {
     display: none;
   }
 }
+
 @media screen and (max-width: 320px) {
   header {
     margin: 0;
@@ -1137,6 +1143,14 @@ figure {
     padding-bottom: 2%;
   }
 
+  .advantages__wrapper {
+    display: none;
+  }
+
+  .advantages {
+    margin-bottom: 10%;
+  }
+  
   .projects {
     margin-top: 10%;
     max-width: 100%;

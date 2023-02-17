@@ -7,10 +7,39 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  margin-bottom: 5%;
 }
 .portfolio__block-text {
 }
 .portfolio__caption {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 72px;
+  color: #1a1a18;
+}
+.portfolio__block-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 6fr;
+}
+.portfolio__inner {
+}
+.portfolio__name-info {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1a1a18;
+}
+.portfolio__text-info {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1a1a18;
 }
 .portfolio__block-img {
   display: grid;

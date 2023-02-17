@@ -286,11 +286,6 @@ header {
   background: #dde3e1;
   height: 40vh;
 }
-.instruction__inner-form {
-  height: 100%;
-  display: grid;
-  grid-template-rows: 25% 15% 30% 30%;
-}
 .instruction__box-img {
   grid-area: instruction__box-img;
   background: #dde3e1;
@@ -303,13 +298,21 @@ header {
   height: 200%;
   max-width: 75%;
 }
+.instruction__checkbox-text {
+  margin-left: 5%;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8em;
+  color: #1a1a18;
+}
 .instruction__button {
   background: #545a2f;
   border: none;
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 1.5em;
   text-align: center;
   color: #ffffff;
   width: 50%;
@@ -616,7 +619,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3%;
+  padding: 10%;
 }
 .instruction-mobile__caption-text,
 .questions__caption-text,
@@ -651,8 +654,7 @@ header {
   margin: 2%;
 }
 .instruction-mobile__checkbox-text,
-.questions__checkbox-text,
-.instruction__checkbox-text {
+.questions__checkbox-text {
   margin-left: 5%;
   font-family: "Noah";
   font-style: normal;
@@ -671,10 +673,11 @@ header {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 1em;
   text-align: center;
   color: #ffffff;
   width: 70%;
+  padding: 2%;
 }
 
 .application__container {
@@ -703,7 +706,7 @@ header {
 .application__vector-img1 {
   grid-area: application__vector-img1;
   padding-top: 40%;
-  max-width: 100px;
+  max-width: 200px;
 }
 .application__vector-img2 {
   display: none;
@@ -713,7 +716,7 @@ header {
   grid-area: application__button-container;
 }
 .application__button {
-  width: 100%;
+  width: 200px;
   height: 40px;
 }
 .application__button-up {
@@ -813,20 +816,40 @@ header {
   text-decoration: none;
 }
 /* Футер - Асият end */
-@media screen and (min-width: 2500px) {
-}
-@media screen and (max-width: 767px) {
-}
-@media screen and (max-width: 320px) {
-}
 
 @media screen and (min-width: 2500px) {
   .instruction-mobile {
     display: none;
   }
-  .application__container {
-    max-width: 30%;
-    margin: 0 auto;
+  .instruction__box,
+  .instruction__img {
+    margin-left: 20%;
+    width: 80%;
+  }
+  .instruction__block-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .instruction__img {
+    height: 180%;
+  }
+  .instruction__text,
+  .instruction__form-email,
+  .instruction__form-checkbox,
+  .instruction__button {
+    margin-right: 25%;
+  }
+  .instruction__text,
+  .instruction__checkbox-text {
+    font-size: 2.5em;
+  }
+  .instruction__form-email {
+    font-size: 3em;
+  }
+  .instruction__button {
+    font-size: 2em;
+    height: 15%;
   }
   .questions,
   .reviews,
@@ -834,17 +857,32 @@ header {
     max-width: 50%;
     margin: 0 auto;
   }
-  .instruction__box,
-  .instruction__img {
-    margin-left: 25%;
+  .reviews__text {
+    font-size: 2.5em;
   }
-  .instruction__inner-form {
-    margin-right: 25%;
+  .questions__form-email {
+    width: 80%;
+    border: none;
+    padding: 2% 0 2% 2%;
+    font-size: 2em;
   }
-  .instruction__text {
-    font-size: 5em;
+  .questions__button {
+    font-size: 2em;
+    padding: 2%;
   }
-  .instruction__form-email {
+  .questions__checkbox-text {
+    font-size: 2em;
+  }
+  .application__container {
+    max-width: 30%;
+    margin: 0 auto;
+  }
+  .application__vector-img1 {
+    max-width: 600px;
+  }
+  .application__button {
+    width: 400px;
+    height: 90px;
     font-size: 3em;
   }
 }
@@ -920,6 +958,10 @@ header {
     text-align: center;
     color: #1a1a18;
   }
+  .application__button-img {
+    height: 65px;
+    width: 65px;
+  }
 }
 @media screen and (max-width: 576px) {
   .instruction {
@@ -964,13 +1006,39 @@ header {
     margin: 0 auto;
     padding: 3%;
   }
-}
-/* @media screen and (min-width: 321px) {
-  .instruction__checkbox-text,
-  .instruction__button {
-    font-size: 10px;
+  .application__button-img {
+    height: 60px;
+    width: 60px;
   }
-} */
+  .application__container {
+    display: grid;
+    grid-template-areas:
+      "application__block-text application__vector-img2"
+      "application__button-container application__button-container";
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  .application__title {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(24px + (46 + 46 * 0.7) * ((100vw - 320px) / 1920));
+    color: #1a1a18;
+  }
+  .application__text {
+    text-align: left;
+    line-height: 20px;
+  }
+  .application__vector-img2 {
+    height: 70%;
+    display: grid;
+    grid-area: application__vector-img2;
+    transform: rotate(10deg);
+  }
+  .application__vector-img1 {
+    display: none;
+  }
+}
 @media screen and (max-width: 320px) {
   header {
     margin: 0;
@@ -1213,6 +1281,10 @@ header {
   }
   .application__vector-img1 {
     display: none;
+  }
+  .application__button-img {
+    height: 40px;
+    width: 40px;
   }
 
   .footer__inner {

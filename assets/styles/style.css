@@ -114,6 +114,7 @@ header {
 }
 /* Яна хедер финиш */
 /* Основной текст - Асият start */
+
 .description {
   position: relative;
 }
@@ -122,7 +123,7 @@ header {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
-  font-size: calc(24px + (24 + 24 * 0.7) * ((100vw - 320px) / 1920));
+  font-size: calc(24px + 24 * (100vw / 1920));
   line-height: 59.95px;
   text-align: center;
   color: #1a1a18;
@@ -132,13 +133,13 @@ header {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
-  font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
+  font-size: calc(16px + 8 * (100vw / 1920));
   line-height: 30px;
   text-align: center;
   color: #000000;
   margin-left: 29%;
   margin-right: 29%;
-  margin-top: 53px;
+  margin-top: 3%;
 }
 
 .description__branch-left {
@@ -160,8 +161,8 @@ header {
   justify-content: space-between;
   margin-left: 3%;
   margin-right: 3%;
-  margin-top: 196px;
-  margin-bottom: 196px;
+  margin-top: 11%;
+  margin-bottom: 11%;
 }
 
 .description__photo {
@@ -176,7 +177,7 @@ header {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
-  font-size: calc(24px + (24 + 24 * 0.7) * ((100vw - 320px) / 1920));
+  font-size: calc(24px + 24 * (100vw / 1920));
   line-height: 59.95px;
   text-align: center;
   color: #1a1a18;
@@ -188,17 +189,16 @@ header {
   z-index: 2;
   width: 36.5%;
   left: 4.5%;
-  top: 257px;
+  top: 24%;
 }
 
 .advantages figcaption {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
-  font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
-  line-height: 30px;
+  font-size: calc(16px + 8 * (100vw / 1920));
   text-align: center;
-  margin-bottom: 14px;
+  margin-bottom: 8%;
 }
 
 .advantages__image1 {
@@ -210,7 +210,7 @@ header {
   z-index: 3;
   width: 27.9%;
   left: 17%;
-  top: 770px;
+  top: 68%;
 }
 
 .advantages__garland {
@@ -234,24 +234,23 @@ header {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
-  font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
-  line-height: 29.98px;
+  font-size: calc(16px + 8 * (100vw / 1920));
 }
 
 .advantages li:first-child {
-  margin-top: 199px;
+  margin-top: 10%;
   margin-left: 46.4%;
 }
 
 .advantages li:nth-child(2) {
-  margin-top: 156px;
+  margin-top: 6%;
   margin-left: 49%;
 }
 
 .advantages li:last-child {
-  margin-top: 161px;
+  margin-top: 6%;
   margin-left: 50.89%;
-  margin-bottom: 437px;
+  margin-bottom: 15%;
 }
 
 /* Основной текст - Асият finish */

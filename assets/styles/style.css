@@ -822,6 +822,17 @@ figure {
 /* Футер - Асият end */
 
 @media screen and (min-width: 2500px) {
+  .projects__container {
+    grid-template-columns: repeat(2, 6fr);
+    height: 75vh;
+  }
+  .projects__img-one,
+  .projects__img-two,
+  .projects__img-three,
+  .projects__img-four {
+    height: 100%;
+  }
+
   .header__logo {
     width: 50%;
   }
@@ -925,6 +936,10 @@ figure {
     width: 400px;
     height: 90px;
     font-size: 3em;
+  }
+  .application__icon {
+    height: 150px;
+    width: 150px;
   }
 }
 
@@ -1099,6 +1114,9 @@ figure {
     font-size: calc(40px + (18 + 18 * 0.7) * ((100vw - 320px) / 1920));
     text-align: center;
     color: #1a1a18;
+  }
+  .application__vector-img1 {
+    max-width: 100px;
   }
   .footer__inner {
     text-align: center;

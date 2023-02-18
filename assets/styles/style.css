@@ -59,6 +59,14 @@ header {
   text-align: center;
 }
 
+.menu__button {
+  border: none;
+}
+
+.menu__telephone:hover {
+  color: white;
+}
+
 .menu__button:active {
   text-decoration: none;
 }
@@ -903,6 +911,19 @@ figure {
     font-size: 2em;
     height: 15%;
   }
+
+.projects__container {
+  grid-template-columns: repeat(2, 4fr);
+  height: 75vh;
+}
+.projects__img-one,
+.projects__img-two,
+.projects__img-three,
+.projects__img-four {
+  width: 100%;
+  height: 100%;
+}
+
   .questions,
   .reviews,
   .values__container {
@@ -1021,6 +1042,10 @@ figure {
   .header_link-icon,
   .header__link-wrapper {
     display: none;
+  }
+
+  .nav-link {
+    font-size: 10px;
   }
 
   .projects__container {

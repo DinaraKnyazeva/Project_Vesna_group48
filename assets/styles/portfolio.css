@@ -188,7 +188,6 @@ img {
   display: none;
 }
 
-
 @media screen and (min-width: 2500px) {
   .portfolio__caption {
     font-size: calc(60px + (18 + 18 * 0.7) * ((100vw - 320px) / 1920));
@@ -286,3 +285,4 @@ img {
     font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
     line-height: 25px;
   }
+}

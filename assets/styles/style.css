@@ -726,9 +726,13 @@ figure {
   right: 2%;
   z-index: 9;
 }
-.application__button-img {
-  height: 80px;
-  width: 80px;
+.application__icon {
+  fill: #99a18e;
+  height: 100px;
+  width: 100px;
+}
+.application__button-up:hover > .application__icon {
+  fill: #545a2f;
 }
 
 /* Футер - Асият start */
@@ -818,7 +822,7 @@ figure {
 /* Футер - Асият end */
 
 @media screen and (min-width: 2500px) {
-  .header__logo{
+  .header__logo {
     width: 50%;
   }
 
@@ -925,7 +929,7 @@ figure {
 }
 
 @media screen and (max-width: 992px) {
-  .header__logo, 
+  .header__logo,
   .header__branch {
     width: 40%;
   }
@@ -961,12 +965,11 @@ figure {
     display: none;
   }
 
-
   .four-steps {
     margin-left: 0%;
     margin-right: 0%;
   }
-  
+
   .four-steps__container-fluid,
   .four-steps__steps {
     flex-direction: column;
@@ -995,7 +998,6 @@ figure {
   }
 }
 @media screen and (max-width: 767px) {
-
   .header__logo {
     width: 50%;
   }
@@ -1004,7 +1006,7 @@ figure {
   .header_link-icon,
   .header__link-wrapper {
     display: none;
-    }
+  }
 
   .projects__container {
     display: grid;
@@ -1032,12 +1034,11 @@ figure {
     display: none;
   }
 
-
   .four-steps {
     margin-left: 0%;
     margin-right: 0%;
   }
-  
+
   .four-steps__container-fluid,
   .four-steps__steps {
     flex-direction: column;
@@ -1099,10 +1100,6 @@ figure {
     text-align: center;
     color: #1a1a18;
   }
-  .application__button-img {
-    height: 65px;
-    width: 65px;
-  }
   .footer__inner {
     text-align: center;
     display: flex;
@@ -1144,12 +1141,11 @@ figure {
   }
 }
 @media screen and (max-width: 576px) {
-
   .header__menu-wrapper,
   .header_link-icon,
   .header__link-wrapper {
     display: none;
-    }
+  }
 
   .projects__container {
     display: grid;
@@ -1177,12 +1173,11 @@ figure {
     display: none;
   }
 
-
   .four-steps {
     margin-left: 0%;
     margin-right: 0%;
   }
-  
+
   .four-steps__container-fluid,
   .four-steps__steps {
     flex-direction: column;
@@ -1233,10 +1228,6 @@ figure {
     max-width: 75%;
     margin: 0 auto;
     padding: 3%;
-  }
-  .application__button-img {
-    height: 60px;
-    width: 60px;
   }
   .application__container {
     display: grid;
@@ -1539,9 +1530,9 @@ figure {
   .application__vector-img1 {
     display: none;
   }
-  .application__button-img {
-    height: 40px;
-    width: 40px;
+  .application__icon {
+    height: 60px;
+    width: 60px;
   }
 
   .footer__inner {

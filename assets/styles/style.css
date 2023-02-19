@@ -958,10 +958,6 @@ figure {
     height: 90px;
     font-size: 3em;
   }
-  .application__icon {
-    height: 150px;
-    width: 150px;
-  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1139,9 +1135,6 @@ figure {
     font-size: calc(40px + (18 + 18 * 0.7) * ((100vw - 320px) / 1920));
     text-align: center;
     color: #1a1a18;
-  }
-  .application__vector-img1 {
-    max-width: 100px;
   }
   .footer__inner {
     text-align: center;

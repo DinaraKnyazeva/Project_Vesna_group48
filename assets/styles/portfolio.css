@@ -187,6 +187,13 @@ img {
 .portfolio__img-mobile {
   display: none;
 }
+.footer__portfolio {
+  max-height: 30vh;
+}
+.footer__logo-portfolio {
+  display: flex;
+  justify-content: center;
+}
 
 @media screen and (min-width: 2500px) {
   .portfolio__caption {

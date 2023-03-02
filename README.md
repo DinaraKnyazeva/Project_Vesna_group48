@@ -18,5 +18,5 @@ BEM <br/>
 # Developer team <br/>
 Yana Germatskaya (Team Lead) https://github.com/yanakin394,<br/>
 Dinara Knyazeva https://github.com/DinaraKnyazeva,<br/>
-Asya Yusupova https://github.com/asyayus,
+Asya Yusupova https://github.com/asyayus,<br/>
 Alena Popova https://github.com/alenopova. <br/>

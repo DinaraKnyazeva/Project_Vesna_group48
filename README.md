@@ -8,7 +8,7 @@ https://dinaraknyazeva.github.io/Project_Vesna_group48/ <br/>
 ## Technologies used: <br/>
 HTML <br/>
 CSS <br/>
-фреймворк Bootstrap 5.0 <br/>
+Bootstrap 5.0 framework <br/>
 BEM <br/>
 
 ## To do <br/>

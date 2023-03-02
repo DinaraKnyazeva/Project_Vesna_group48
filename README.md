@@ -1,5 +1,5 @@
 # VESNA - ландшафтная студия Марины Крокиной <br/>
-*(our first student project after 3 months studying HTML/CSS block)*
+*(our first student project after 8 weeks studying HTML/CSS block)*
 
 We created a website for the landscape studio, where you can find all the necessary information about the company, what they do and their portfolio. <br/>
 

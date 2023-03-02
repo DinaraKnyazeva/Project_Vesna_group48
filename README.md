@@ -1,21 +1,23 @@
-# VESNA - ландшафтная студия Марины Крокиной
+# VESNA - ландшафтная студия Марины Крокиной <br/>
+*(our first student project after 8 weeks studying HTML/CSS block)*
 
-В этом проекте мы сделали сайт для студии ландшафтного дизайна, в котором предлагаются различные услуги студии, представляется портфолио и информация по растениям. Проект все еще находится в статусе доработки. <br/>
+We created a website for the landscape studio, where you can find all the necessary information about the company, what they do and their portfolio. <br/>
 
-Проект можно посмотреть по следующей ссылке <br/>
+You can check the project following the link below <br/>
 https://dinaraknyazeva.github.io/Project_Vesna_group48/ <br/>
 
-В проекте были использованы следующие технологии <br/>
+## Technologies used: <br/>
 HTML <br/>
 CSS <br/>
-фреймворк Bootstrap 5.0 <br/>
+Bootstrap 5.0 framework <br/>
+BEM <br/>
 
-Использование <br/>
-Для установки проекта, вам достаточно загрузить его на свой сервер. <br/>
-
-To do <br/>
- Доработать оставшиеся страницы сайта. <br/>
+## To do <br/>
+ Complete the other pages. <br/>
 
 
-Команда проекта <br/>
-Динара Князева, Асья Юсупова, Алена Попова, Яна Гермацкая <br/>
+# Developer team <br/>
+Yana Germatskaya (Team Lead) https://github.com/yanakin394,<br/>
+Dinara Knyazeva https://github.com/DinaraKnyazeva,<br/>
+Asya Yusupova https://github.com/asyayus,<br/>
+Alena Popova https://github.com/alenopova. <br/>

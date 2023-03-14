@@ -51,21 +51,29 @@ header {
   color: #ffffff;
 }
 
-.header__telephone-button {
+.menu__telephone {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   text-align: center;
-  background-color: white;
-  text-decoration: none;
-  color: #000000!important;
 }
 
-.header__telephone-button:hover {
-  background-color: #545a2f;
-  color: white!important;
+.menu__button {
+  border: none;
+}
+
+.menu__telephone:hover {
+  color: white;
+}
+
+.menu__button:active {
   text-decoration: none;
+}
+
+.menu__button:hover {
+  background-color: #545a2f;
+  color: white;
 }
 
 .header__text {

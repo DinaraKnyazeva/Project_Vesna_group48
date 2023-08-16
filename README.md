@@ -1,6 +1,10 @@
 # VESNA - ландшафтная студия Марины Крокиной <br/>
 
-A website for the landscape studio, where you can find all the necessary information about the company, what they do and their portfolio. <br/>
+A website for the landscape studio with a responsive layout. <br/>
+
+<img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme1.png">
+<img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme2.png">
+<img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme3.png">
 
 ## Technologies:
 <div>

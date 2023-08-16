@@ -2,9 +2,9 @@
 
 A website for the landscape studio with a responsive layout. <br/>
 
-<img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme1.png">
-<img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme2.png">
-<img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme3.png">
+<img width="700" alt="Website_screenshot" src="assets/images/main/screenshot_for_readme1.png">
+<img width="700" alt="Website_screenshot" src="assets/images/main/screenshot_for_readme2.png">
+<img width="700" alt="Website_screenshot" src="assets/images/main/screenshot_for_readme3.png">
 
 ## Technologies:
 <div>
